@@ -221,6 +221,20 @@
             line-height: 1.6;
         }
 
+        .equation {
+            text-align: center;
+            margin: 25px 0;
+            padding: 15px;
+        }
+
+        .equation-label {
+            text-align: right;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+            margin-right: 20px;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.8em;
@@ -290,6 +304,19 @@
                     <strong>Affluence (1–5):</strong> Impoverished → Low → Moderate → High → Luxury.<br><br>
                     <strong>Maintenance (1–5):</strong> Severely Damaged → Poor → Moderate → Well-Maintained → Excellent.
                 </div>
+            </div>
+            <h3 class="subsection-header">Diversity Computation</h3>
+            <div class="content-section">
+                <p>Using the distributions obtained from the VDI and SEVI questions, we quantify the uniformity of answer distributions by computing the <em>Hill Number</em>, calculated by exponentiating Shannon's entropy, which captures the uniformity of the distribution.</p>
+                
+                <p>Consider a question $q_k$ (related to either SEVI or VDI attributes), having a set of answers denoted by $\mathcal{A}_k$. Given that the values of an attribute can be too large to enumerate exhaustively, we generate an approximate set of answers per question by leveraging the world knowledge of the LLMs, denoting the same as $\hat{\mathcal{A}_k}$. Since the number of plausible answers can vary across different questions, we compute a <em>Normalized Hill Number</em> (ranging between $0$ and $1$) to enable fair comparison between questions with varying answer-set sizes, as defined below:</p>
+                
+                <div class="equation">
+                    $$\text{Diversity-Score} = \frac{\exp(H(\hat{P_k}))-1}{|\hat{\mathcal{A}_k}|-1}$$
+                    <div class="equation-label">(1)</div>
+                </div>
+                
+                <p>where $\hat{P_k}$ is the answer distribution for $q_k$, and $H(\cdot)$ denotes Shannon entropy. Diversity for <strong>Affluence</strong> and <strong>Maintenance</strong> are computed directly using Diversity-Score. The <strong>Entity-Appearance</strong> and <strong>Background-Appearance</strong> Diversity are calculated by averaging Diversity-Score over all related questions for the individual dimensions.</p>
             </div>
         </div>
     </div>
