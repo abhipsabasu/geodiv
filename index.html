@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GEODIV: Framework for Measuring Geographical Diversity in Text-to-Image Models</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>
@@ -80,6 +81,53 @@
             vertical-align: super;
         }
 
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .button-arxiv {
+            background-color: #B31B1B;
+        }
+
+        .button-arxiv:hover {
+            background-color: #8B1414;
+        }
+
+        .button-github {
+            background-color: #24292e;
+        }
+
+        .button-github:hover {
+            background-color: #1a1e22;
+        }
+
+        .button i {
+            font-size: 1.1em;
+        }
+
         .content {
             margin-top: 40px;
         }
@@ -131,6 +179,16 @@
             </div>
             <div class="equal-contribution">
                 <sup>*</sup>Equal contribution
+            </div>
+            <div class="buttons">
+                <a href="https://github.com/abhipsabasu/geodiv" class="button button-arxiv" target="_blank">
+                    <i class="fas fa-file-pdf"></i>
+                    arXiv
+                </a>
+                <a href="https://github.com/abhipsabasu/geodiv" class="button button-github" target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
             </div>
         </header>
         <div class="content">
