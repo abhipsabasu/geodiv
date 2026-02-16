@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Samples - GEODIV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+
+        .authors {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        .authors span {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .authors span:not(:last-child)::after {
+            content: ',';
+        }
+
+        .equal-contribution {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        .equal-contribution sup {
+            font-size: 0.7em;
+            vertical-align: super;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .button-arxiv {
+            background-color: #B31B1B;
+        }
+
+        .button-arxiv:hover {
+            background-color: #8B1414;
+        }
+
+        .button-github {
+            background-color: #24292e;
+        }
+
+        .button-github:hover {
+            background-color: #1a1e22;
+        }
+
+        .button-home {
+            background-color: #4a90e2;
+        }
+
+        .button-home:hover {
+            background-color: #357abd;
+        }
+
+        .button i {
+            font-size: 1.1em;
+        }
+
+        .samples-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .dropdowns {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .dropdown-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .dropdown-group label {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .dropdown-group select {
+            padding: 12px 15px;
+            font-size: 1em;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            background-color: white;
+            color: #333;
+            cursor: pointer;
+            transition: border-color 0.3s ease;
+        }
+
+        .dropdown-group select:hover {
+            border-color: #4a90e2;
+        }
+
+        .dropdown-group select:focus {
+            outline: none;
+            border-color: #4a90e2;
+            box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .authors {
+                font-size: 1em;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+
+            .buttons {
+                gap: 10px;
+            }
+
+            .button {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GEODIV: FRAMEWORK FOR MEASURING GEOGRAPHICAL DIVERSITY IN TEXT-TO-IMAGE MODELS</h1>
+            <div class="authors">
+                <span>Abhipsa Basu<sup>*</sup></span>
+                <span>Mohana Singh<sup>*</sup></span>
+                <span>Shashank Agnihotri</span>
+                <span>Margret Keuper</span>
+                <span>R. Venkatesh Babu</span>
+            </div>
+            <div class="equal-contribution">
+                <sup>*</sup>Equal contribution
+            </div>
+            <div class="buttons">
+                <a href="index.html" class="button button-home">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+                <a href="https://github.com/abhipsabasu/geodiv" class="button button-arxiv" target="_blank">
+                    <i class="fas fa-file-pdf"></i>
+                    arXiv
+                </a>
+                <a href="https://github.com/abhipsabasu/geodiv" class="button button-github" target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </header>
+        <div class="samples-section">
+            <h2 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">View Samples</h2>
+            <div class="dropdowns">
+                <div class="dropdown-group">
+                    <label for="entity">Entities:</label>
+                    <select id="entity" name="entity">
+                        <option value="">Select an entity...</option>
+                        <option value="backyard">backyard</option>
+                        <option value="bag">bag</option>
+                        <option value="car">car</option>
+                        <option value="chair">chair</option>
+                        <option value="cooking pot">cooking pot</option>
+                        <option value="dog">dog</option>
+                        <option value="house">house</option>
+                        <option value="plate of food">plate of food</option>
+                        <option value="shopfront">shopfront</option>
+                        <option value="stove">stove</option>
+                    </select>
+                </div>
+                <div class="dropdown-group">
+                    <label for="country">Countries:</label>
+                    <select id="country" name="country">
+                        <option value="">Select a country...</option>
+                        <option value="United States">United States</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Japan">Japan</option>
+                        <option value="South Korea">South Korea</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="China">China</option>
+                        <option value="India">India</option>
+                        <option value="UAE">UAE</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="Philippines">Philippines</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Nigeria">Nigeria</option>
+                    </select>
+                </div>
+                <div class="dropdown-group">
+                    <label for="model">Text-to-Image Model:</label>
+                    <select id="model" name="model">
+                        <option value="">Select a model...</option>
+                        <option value="SDv2.1">SDv2.1</option>
+                        <option value="SDv3m">SDv3m</option>
+                        <option value="SDv3.5">SDv3.5</option>
+                        <option value="FLUX.1-dev">FLUX.1-dev</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
