@@ -316,6 +316,17 @@
                 
                 <p>where $\hat{P_k}$ is the answer distribution for $q_k$, and $H(\cdot)$ denotes Shannon entropy. Diversity for <strong>Affluence</strong> and <strong>Maintenance</strong> are computed directly using Diversity-Score. The <strong>Entity-Appearance</strong> and <strong>Background-Appearance</strong> Diversity are calculated by averaging Diversity-Score over all related questions for the individual dimensions.</p>
             </div>
+            <h2 class="section-header">What Does GeoDiv Reveal About Geo-Diversity?</h2>
+            <h3 class="subsection-header">SEVI</h3>
+            <div class="content-section">
+                <img src="sevi_heatmaps.png" alt="SEVI Heatmaps" class="method-image">
+                <p>The above diagram displays the SEVI Diversity and Mean Ratings across Datasets and Selected Countries. India (IN), Nigeria (NG), and Colombia (CO) are seen to receive lower SEVI ratings, while the US, UK, and Japan (JP) rank highest—revealing strong socio-economic biases in country-level image representations. Strikingly, none of the models generate images spanning <em>diverse</em> socio-economic strata.</p>
+            </div>
+            <h3 class="subsection-header">VDI</h3>
+            <div class="content-section">
+                <img src="sevi_two_barplots_vdi.png" alt="VDI Barplots" class="method-image">
+                <p>The above diagram displays the VDI Scores across (a) Datasets, and (b) Selected Countries. Model-wise VDI diversities are similar, with SD2.1 achieving higher scores than the others. Mexico and the UK show low entity and background diversity, while Japan scores highest.</p>
+            </div>
         </div>
     </div>
 </body>
