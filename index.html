@@ -58,6 +58,18 @@
             content: ',';
         }
 
+        .equal-contribution {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        .equal-contribution sup {
+            font-size: 0.7em;
+            vertical-align: super;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.8em;
@@ -78,11 +90,14 @@
         <header>
             <h1>GEODIV: FRAMEWORK FOR MEASURING GEOGRAPHICAL DIVERSITY IN TEXT-TO-IMAGE MODELS</h1>
             <div class="authors">
-                <span>Abhipsa Basu</span>
-                <span>Mohana Singh</span>
+                <span>Abhipsa Basu<sup>*</sup></span>
+                <span>Mohana Singh<sup>*</sup></span>
                 <span>Shashank Agnihotri</span>
                 <span>Margret Keuper</span>
                 <span>R. Venkatesh Babu</span>
+            </div>
+            <div class="equal-contribution">
+                <sup>*</sup>Equal contribution
             </div>
         </header>
     </div>
