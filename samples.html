@@ -173,6 +173,19 @@
             box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
         }
 
+        .grid-image-container {
+            margin-top: 40px;
+            display: none;
+            text-align: center;
+        }
+
+        .grid-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.8em;
@@ -278,7 +291,116 @@
                     </select>
                 </div>
             </div>
+            <div class="grid-image-container" id="gridImageContainer">
+                <img id="gridImage" src="" alt="Sample Grid">
+            </div>
         </div>
     </div>
+
+    <script>
+        // Mapping dropdown values to folder names
+        const countryMapping = {
+            'United States': 'United_States_of_America',
+            'UAE': 'United_Arab_Emirates',
+            'United Kingdom': 'United_Kingdom',
+            'Mexico': 'Mexico',
+            'Colombia': 'Colombia',
+            'Italy': 'Italy',
+            'Spain': 'Spain',
+            'Japan': 'Japan',
+            'South Korea': 'South_Korea',
+            'Indonesia': 'Indonesia',
+            'China': 'China',
+            'India': 'India',
+            'Turkey': 'Turkey',
+            'Philippines': 'Philippines',
+            'Egypt': 'Egypt',
+            'Nigeria': 'Nigeria'
+        };
+
+        const modelMapping = {
+            'SDv2.1': 'SDv2.1',
+            'SDv3m': 'SDv3m',
+            'SDv3.5': 'SDv3.5',
+            'FLUX.1-dev': 'FLUX.1-Dev'
+        };
+
+        const entityMapping = {
+            'shopfront': 'storefront',
+            'cooking pot': 'cooking_pot',
+            'plate of food': 'plate_of_food'
+        };
+
+        function getEntityFolderName(entity) {
+            const mapped = entityMapping[entity] || entity;
+            return mapped.replace(/\s+/g, '_');
+        }
+
+        function getCountryFolderName(country) {
+            return countryMapping[country] || country.replace(/\s+/g, '_');
+        }
+
+        function getModelFolderName(model) {
+            return modelMapping[model] || model;
+        }
+
+        function loadGridImage(entity, country, model) {
+            const gridImageContainer = document.getElementById('gridImageContainer');
+            const gridImage = document.getElementById('gridImage');
+            
+            if (!entity || !country || !model) {
+                gridImageContainer.style.display = 'none';
+                return;
+            }
+
+            // Get folder names
+            const entityFolder = getEntityFolderName(entity);
+            const countryFolder = getCountryFolderName(country);
+            const modelFolder = getModelFolderName(model);
+
+            // Construct grid image path
+            const gridImagePath = `grid_images/${modelFolder}_${entityFolder}_${countryFolder}.png`;
+            
+            // Set image source
+            gridImage.src = gridImagePath;
+            gridImage.alt = `${entity} in ${country} - ${model}`;
+            
+            // Show container
+            gridImageContainer.style.display = 'block';
+            
+            // Handle image load error
+            gridImage.onerror = function() {
+                console.error('Failed to load image:', gridImagePath);
+                gridImageContainer.innerHTML = '<p style="color: #666; font-style: italic; padding: 20px;">Grid image not found for this combination.<br>Expected: ' + gridImagePath + '</p>';
+            };
+            
+            // Reset onerror handler on successful load
+            gridImage.onload = function() {
+                console.log('Successfully loaded:', gridImagePath);
+            };
+        }
+
+        // Add event listeners to dropdowns
+        document.getElementById('entity').addEventListener('change', function() {
+            const entity = this.value;
+            const country = document.getElementById('country').value;
+            const model = document.getElementById('model').value;
+            loadGridImage(entity, country, model);
+        });
+
+        document.getElementById('country').addEventListener('change', function() {
+            const entity = document.getElementById('entity').value;
+            const country = this.value;
+            const model = document.getElementById('model').value;
+            loadGridImage(entity, country, model);
+        });
+
+        document.getElementById('model').addEventListener('change', function() {
+            const entity = document.getElementById('entity').value;
+            const country = document.getElementById('country').value;
+            const model = this.value;
+            loadGridImage(entity, country, model);
+        });
+    </script>
 </body>
 </html>
