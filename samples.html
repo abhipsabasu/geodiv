@@ -531,6 +531,7 @@
             options = options || {};
             const fullWidth = options.fullWidth;
             const largeFont = options.largeFont;
+            const smallYAxisFont = options.smallYAxisFont;
             if (container._chartInstance) {
                 container._chartInstance.destroy();
                 container._chartInstance = null;
@@ -543,6 +544,8 @@
             const data = pairs.map(function(p) { return parseFloat(p[1]); });
             const fontSize = largeFont ? 16 : undefined;
             const titleFontSize = largeFont ? 18 : undefined;
+            const yFontSize = smallYAxisFont ? 11 : fontSize;
+            const yTitleFontSize = smallYAxisFont ? 13 : titleFontSize;
             container._chartInstance = new Chart(canvas, {
                 type: 'bar',
                 data: {
@@ -577,9 +580,9 @@
                             title: {
                                 display: true,
                                 text: 'Attribute Values',
-                                font: titleFontSize ? { size: titleFontSize } : undefined
+                                font: yTitleFontSize ? { size: yTitleFontSize } : undefined
                             },
-                            ticks: fontSize ? { font: { size: fontSize } } : undefined
+                            ticks: yFontSize ? { font: { size: yFontSize } } : undefined
                         }
                     }
                 }
@@ -809,7 +812,7 @@
                 chartContainer.innerHTML = '<p class="view-placeholder-text">No distribution data.</p>';
                 return;
             }
-            renderDistributionChart(chartContainer, pairs, { fullWidth: true, largeFont: true });
+            renderDistributionChart(chartContainer, pairs, { fullWidth: true, largeFont: true, smallYAxisFont: true });
         }
 
         function loadBackgroundAppearance(entity, country, model) {
@@ -910,7 +913,7 @@
                 chartContainer.innerHTML = '<p class="view-placeholder-text">No distribution data.</p>';
                 return;
             }
-            renderDistributionChart(chartContainer, pairs, { fullWidth: true, largeFont: true });
+            renderDistributionChart(chartContainer, pairs, { fullWidth: true, largeFont: true, smallYAxisFont: true });
         }
 
         function loadGridImage(entity, country, model) {
