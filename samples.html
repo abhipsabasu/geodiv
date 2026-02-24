@@ -272,6 +272,15 @@
             max-height: 360px;
         }
 
+        .distribution-chart-wrap.chart-width-80 {
+            max-width: 80%;
+            width: 80%;
+        }
+
+        .distribution-chart-wrap.chart-width-80 canvas {
+            max-height: 360px;
+        }
+
         .view-data-link {
             margin-top: 24px;
             padding-top: 16px;
@@ -532,11 +541,12 @@
             const fullWidth = options.fullWidth;
             const largeFont = options.largeFont;
             const smallYAxisFont = options.smallYAxisFont;
+            const widthPercent80 = options.widthPercent === 80;
             if (container._chartInstance) {
                 container._chartInstance.destroy();
                 container._chartInstance = null;
             }
-            container.className = 'distribution-chart-wrap' + (fullWidth ? ' full-width-chart' : '');
+            container.className = 'distribution-chart-wrap' + (widthPercent80 ? ' chart-width-80' : (fullWidth ? ' full-width-chart' : ''));
             container.innerHTML = '';
             const canvas = document.createElement('canvas');
             container.appendChild(canvas);
@@ -616,7 +626,7 @@
                 })
                 .then(function(text) {
                     const lines = text.trim().split(/\r?\n/);
-                    if (lines.length < 2) throw new Error('Empty or invalid CSV');
+                    if (lines.length < 2) throw new Error('No relevant questions.');
                     const headers = lines[0].split(',');
                     const countryIdx = headers.map(function(h) { return h.trim(); }).indexOf('country');
                     const distIdx = headers.map(function(h) { return h.trim(); }).indexOf('distribution');
@@ -777,7 +787,7 @@
                     });
                     questionGroup.style.display = 'flex';
                     chartContainer.innerHTML = '';
-                    chartContainer.classList.remove('distribution-chart-wrap', 'full-width-chart');
+                    chartContainer.classList.remove('distribution-chart-wrap', 'full-width-chart', 'chart-width-80');
                     updateEntityAppearanceChart();
                 })
                 .catch(function(err) {
@@ -812,7 +822,7 @@
                 chartContainer.innerHTML = '<p class="view-placeholder-text">No distribution data.</p>';
                 return;
             }
-            renderDistributionChart(chartContainer, pairs, { fullWidth: true, largeFont: true, smallYAxisFont: true });
+            renderDistributionChart(chartContainer, pairs, { fullWidth: true, largeFont: true, widthPercent: 80 });
         }
 
         function loadBackgroundAppearance(entity, country, model) {
@@ -878,7 +888,7 @@
                     });
                     questionGroup.style.display = 'flex';
                     chartContainer.innerHTML = '';
-                    chartContainer.classList.remove('distribution-chart-wrap', 'full-width-chart');
+                    chartContainer.classList.remove('distribution-chart-wrap', 'full-width-chart', 'chart-width-80');
                     updateBackgroundAppearanceChart();
                 })
                 .catch(function(err) {
@@ -913,7 +923,7 @@
                 chartContainer.innerHTML = '<p class="view-placeholder-text">No distribution data.</p>';
                 return;
             }
-            renderDistributionChart(chartContainer, pairs, { fullWidth: true, largeFont: true, smallYAxisFont: true });
+            renderDistributionChart(chartContainer, pairs, { fullWidth: true, largeFont: true, widthPercent: 80 });
         }
 
         function loadGridImage(entity, country, model) {
