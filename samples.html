@@ -579,8 +579,8 @@
             const data = pairs.map(function(p) { return parseFloat(p[1]); });
             const fontSize = largeFont ? 16 : undefined;
             const titleFontSize = largeFont ? 18 : undefined;
-            const yFontSize = smallYAxisFont ? 11 : fontSize;
-            const yTitleFontSize = smallYAxisFont ? 13 : titleFontSize;
+            const yFontSize = smallYAxisFont ? 11 : (largeFont ? 14 : fontSize);
+            const yTitleFontSize = smallYAxisFont ? 13 : (largeFont ? 16 : titleFontSize);
             container._chartInstance = new Chart(canvas, {
                 type: 'bar',
                 data: {
