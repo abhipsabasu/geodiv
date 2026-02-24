@@ -204,21 +204,28 @@
             font-style: italic;
         }
 
-        #affluenceContent.distribution-list {
-            text-align: left;
+        #affluenceContent.distribution-table-wrap {
             padding: 20px;
-            max-width: 400px;
             margin: 0 auto;
         }
 
-        #affluenceContent .distribution-line {
-            font-family: 'Segoe UI', monospace;
-            padding: 4px 0;
-            border-bottom: 1px solid #eee;
+        #affluenceContent table.distribution-table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            min-width: 200px;
         }
 
-        #affluenceContent .distribution-line:last-child {
-            border-bottom: none;
+        #affluenceContent table.distribution-table th,
+        #affluenceContent table.distribution-table td {
+            border: 1px solid #ddd;
+            padding: 8px 16px;
+            text-align: left;
+        }
+
+        #affluenceContent table.distribution-table th {
+            background-color: #f0f0f0;
+            font-weight: 600;
+            color: #2c3e50;
         }
 
         @media (max-width: 768px) {
@@ -329,7 +336,7 @@
                     <label for="view">View:</label>
                     <select id="view" name="view">
                         <option value="">Select a view...</option>
-                        <option value="display-images">Display images</option>
+                        <option value="display-images">Image Grid</option>
                         <option value="affluence-distribution">Affluence Distribution</option>
                         <option value="maintenance-distribution">Maintenance Distribution</option>
                         <option value="entity-appearance">Entity-Appearance</option>
@@ -469,14 +476,21 @@
                     }
                     const distStr = row[distIdx];
                     const pairs = parseDistributionString(distStr);
-                    container.className = 'distribution-list';
-                    container.innerHTML = '';
+                    container.className = 'distribution-table-wrap';
+                    const table = document.createElement('table');
+                    table.className = 'distribution-table';
+                    const thead = document.createElement('thead');
+                    thead.innerHTML = '<tr><th>Attribute Values</th><th>Frequency</th></tr>';
+                    table.appendChild(thead);
+                    const tbody = document.createElement('tbody');
                     pairs.forEach(function(p) {
-                        const line = document.createElement('div');
-                        line.className = 'distribution-line';
-                        line.textContent = p[0] + ': ' + p[1];
-                        container.appendChild(line);
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = '<td>' + p[0] + '</td><td>' + p[1] + '</td>';
+                        tbody.appendChild(tr);
                     });
+                    table.appendChild(tbody);
+                    container.innerHTML = '';
+                    container.appendChild(table);
                 })
                 .catch(function(err) {
                     container.innerHTML = '<p class="view-placeholder-text">Could not load distribution. ' + (err.message || '') + '</p>';
