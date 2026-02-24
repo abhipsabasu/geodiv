@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a house in China,China,What's the maintenance score?,"{1: 0.0, 2: 0.024, 3: 0.104, 4: 0.456, 5: 0.416}",1.5117186847522892,0.6510617999243526,2.8514953592484957,5,0.46287383981212393
+A photo of a house in Colombia,Colombia,What's the maintenance score?,"{1: 0.084, 2: 0.72, 3: 0.148, 4: 0.048, 5: 0.0}",1.2596180936436054,0.5424879850573969,2.394323506451149,5,0.34858087661278725
+A photo of a house in Egypt,Egypt,What's the maintenance score?,"{1: 0.056, 2: 0.488, 3: 0.252, 4: 0.184, 5: 0.02}",1.8013240857619561,0.7757880572306608,3.485399637784063,5,0.6213499094460158
+A photo of a house in India,India,What's the maintenance score?,"{1: 0.164, 2: 0.796, 3: 0.028, 4: 0.012, 5: 0.0}",0.91076707012571,0.39224602696832944,1.8800448384644215,5,0.22001120961610537
+A photo of a house in Indonesia,Indonesia,What's the maintenance score?,"{1: 0.008, 2: 0.092, 3: 0.144, 4: 0.476, 5: 0.28}",1.7990148844179772,0.7747935383439375,3.47982531232853,5,0.6199563280821325
+A photo of a house in Italy,Italy,What's the maintenance score?,"{1: 0.008, 2: 0.452, 3: 0.364, 4: 0.172, 5: 0.004}",1.5729086068093359,0.6774148649446607,2.9750390533513675,5,0.4937597633378419
+A photo of a house in Japan,Japan,What's the maintenance score?,"{1: 0.0, 2: 0.004, 3: 0.008, 4: 0.252, 5: 0.736}",0.9141681442821465,0.39371078987977587,1.8844821690241944,5,0.2211205422560486
+A photo of a house in Mexico,Mexico,What's the maintenance score?,"{1: 0.02, 2: 0.636, 3: 0.188, 4: 0.152, 5: 0.004}",1.426404477044669,0.6143189705940764,2.687760292001447,5,0.42194007300036174
+A photo of a house in Nigeria,Nigeria,What's the maintenance score?,"{1: 0.036, 2: 0.4, 3: 0.2, 4: 0.224, 5: 0.14}",2.04640614583213,0.8813391553072198,4.130756864135444,5,0.782689216033861
+A photo of a house in Philippines,Philippines,What's the maintenance score?,"{1: 0.004, 2: 0.104, 3: 0.16, 4: 0.44, 5: 0.292}",1.8342030136496201,0.7899482407264632,3.5657437138179056,5,0.6414359284544764
+A photo of a house in South Korea,South Korea,What's the maintenance score?,"{1: 0.0, 2: 0.02, 3: 0.084, 4: 0.456, 5: 0.44}",1.4507949388409516,0.6248233707303198,2.7335863309661548,5,0.4333965827415387
+A photo of a house in Spain,Spain,What's the maintenance score?,"{1: 0.0, 2: 0.332, 3: 0.268, 4: 0.344, 5: 0.056}",1.7997123391594774,0.7750939157514187,3.481508001564568,5,0.620377000391142
+A photo of a house in Turkey,Turkey,What's the maintenance score?,"{1: 0.036, 2: 0.428, 3: 0.252, 4: 0.268, 5: 0.016}",1.802332670665811,0.7762224311055778,3.4878371248634643,5,0.6219592812158661
+A photo of a house in United Arab Emirates,UAE,What's the maintenance score?,"{1: 0.0, 2: 0.008, 3: 0.016, 4: 0.056, 5: 0.92}",0.494721562158036,0.21306497959491513,1.4090487847297486,5,0.10226219618243715
+A photo of a house in United Kingdom,United Kingdom,What's the maintenance score?,"{1: 0.0, 2: 0.084, 3: 0.248, 4: 0.596, 5: 0.072}",1.5173298978734313,0.6534784178779824,2.862607551326334,5,0.4656518878315835
+A photo of a house in United States of America,United States,What's the maintenance score?,"{1: 0.036, 2: 0.492, 3: 0.196, 4: 0.252, 5: 0.024}",1.7671530777973903,0.761071405134583,3.4038160622795886,5,0.6009540155698971

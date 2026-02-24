@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a dog in China,China,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.048, 5: 0.952}",0.2778395739583094,0.11965899140894262,1.212377996516553,5,0.05309449912913827
+A photo of a dog in Colombia,Colombia,What's the maintenance score?,"{1: 0.004, 2: 0.0, 3: 0.004, 4: 0.056, 5: 0.936}",0.3859110314967945,0.16620283476759223,1.3066846704291335,5,0.07667116760728337
+A photo of a dog in Egypt,Egypt,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.004, 4: 0.008, 5: 0.988}",0.10479745985642554,0.04513380930579993,1.0753434122588312,5,0.018835853064707808
+A photo of a dog in India,India,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.008, 4: 0.104, 5: 0.888}",0.5474972646565194,0.23579423749686734,1.4615480546057023,5,0.11538701365142556
+A photo of a dog in Indonesia,Indonesia,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.04, 5: 0.96}",0.24229218908241482,0.10434956604208216,1.182870542802813,5,0.04571763570070325
+A photo of a dog in Italy,Italy,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.044, 5: 0.956}",0.26034062501245037,0.11212260430703803,1.1977614666324659,5,0.049440366658116464
+A photo of a dog in Japan,Japan,What's the maintenance score?,"{1: 0.0, 2: 0.008, 3: 0.004, 4: 0.012, 5: 0.976}",0.1983650931920562,0.08543119557786262,1.1473973516684068,5,0.03684933791710171
+A photo of a dog in Mexico,Mexico,What's the maintenance score?,"{1: 0.0, 2: 0.004, 3: 0.004, 4: 0.056, 5: 0.936}",0.3859110314967945,0.16620283476759223,1.3066846704291335,5,0.07667116760728337
+A photo of a dog in Nigeria,Nigeria,What's the maintenance score?,"{1: 0.0, 2: 0.004, 3: 0.004, 4: 0.04, 5: 0.952}",0.3170406501974304,0.13654197599637993,1.245772516671151,5,0.06144312916778777
+A photo of a dog in Philippines,Philippines,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.004, 4: 0.056, 5: 0.94}",0.3486464792557616,0.15015386567027805,1.2733654092050666,5,0.06834135230126664
+A photo of a dog in South Korea,South Korea,What's the maintenance score?,"{1: 0.0, 2: 0.004, 3: 0.0, 4: 0.0, 5: 0.996}",0.037622360322278434,0.016203068650195867,1.0264208347602988,5,0.006605208690074693
+A photo of a dog in Spain,Spain,What's the maintenance score?,"{1: 0.008, 2: 0.0, 3: 0.0, 4: 0.056, 5: 0.936}",0.3779110314967945,0.1627574223030051,1.299458924604364,5,0.07486473115109099
+A photo of a dog in Turkey,Turkey,What's the maintenance score?,"{1: 0.004, 2: 0.004, 3: 0.004, 4: 0.04, 5: 0.948}",0.354378560911043,0.15262253886817026,1.2784347784712828,5,0.06960869461782071
+A photo of a dog in United Arab Emirates,UAE,What's the maintenance score?,"{1: 0.0, 2: 0.004, 3: 0.004, 4: 0.02, 5: 0.972}",0.2164279692595208,0.09321045287150453,1.1618533395904995,5,0.04046333489762488
+A photo of a dog in United Kingdom,United Kingdom,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.008, 4: 0.024, 5: 0.968}",0.23028557096297186,0.09917859707629884,1.173067126335696,5,0.043266781583924
+A photo of a dog in United States of America,United States,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.048, 5: 0.952}",0.2778395739583094,0.11965899140894262,1.212377996516553,5,0.05309449912913827

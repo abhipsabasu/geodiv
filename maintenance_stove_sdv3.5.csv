@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a stove in China,China,What's the maintenance score?,"{1: 0.012, 2: 0.464, 3: 0.352, 4: 0.172, 5: 0.0}",1.5576240853451502,0.6708321798486664,2.9436866051031187,5,0.4859216512757797
+A photo of a stove in Colombia,Colombia,What's the maintenance score?,"{1: 0.0, 2: 0.676, 3: 0.292, 4: 0.032, 5: 0.0}",1.0593610145423653,0.4562419555002436,2.084008287113423,5,0.2710020717783558
+A photo of a stove in Egypt,Egypt,What's the maintenance score?,"{1: 0.0, 2: 0.396, 3: 0.512, 4: 0.092, 5: 0.0}",1.3403913631533166,0.5772751387541739,2.5322000104139444,5,0.3830500026034861
+A photo of a stove in India,India,What's the maintenance score?,"{1: 0.004, 2: 0.752, 3: 0.232, 4: 0.012, 5: 0.0}",0.9066623273222532,0.3904782104659601,1.874703354370584,5,0.218675838592646
+A photo of a stove in Indonesia,Indonesia,What's the maintenance score?,"{1: 0.008, 2: 0.564, 3: 0.384, 4: 0.044, 5: 0.0}",1.2502367304122024,0.53844765183086,2.3788045336816936,5,0.3447011334204234
+A photo of a stove in Italy,Italy,What's the maintenance score?,"{1: 0.004, 2: 0.548, 3: 0.212, 4: 0.168, 5: 0.068}",1.6778867666004653,0.7226264974763831,3.1995893759871703,5,0.5498973439967926
+A photo of a stove in Japan,Japan,What's the maintenance score?,"{1: 0.004, 2: 0.36, 3: 0.424, 4: 0.168, 5: 0.044}",1.7179545790017348,0.7398827650108922,3.2896967022609562,5,0.5724241755652391
+A photo of a stove in Mexico,Mexico,What's the maintenance score?,"{1: 0.016, 2: 0.832, 3: 0.124, 4: 0.028, 5: 0.0}",0.8340921588631129,0.3592239400951713,1.7827348686470774,5,0.19568371716176935
+A photo of a stove in Nigeria,Nigeria,What's the maintenance score?,"{1: 0.008, 2: 0.7, 3: 0.264, 4: 0.028, 5: 0.0}",1.0676105210512123,0.4597948245692779,2.095959036478089,5,0.2739897591195223
+A photo of a stove in Philippines,Philippines,What's the maintenance score?,"{1: 0.0, 2: 0.812, 3: 0.188, 4: 0.0, 5: 0.0}",0.6972688157923281,0.3002973336373506,1.621432331342122,5,0.1553580828355305
+A photo of a stove in South Korea,South Korea,What's the maintenance score?,"{1: 0.016, 2: 0.62, 3: 0.272, 4: 0.084, 5: 0.008}",1.3898425970585515,0.5985726259649627,2.6205008865497943,5,0.4051252216374486
+A photo of a stove in Spain,Spain,What's the maintenance score?,"{1: 0.004, 2: 0.58, 3: 0.216, 4: 0.144, 5: 0.056}",1.6007002361431972,0.6893840682094197,3.0329048468738167,5,0.5082262117184542
+A photo of a stove in Turkey,Turkey,What's the maintenance score?,"{1: 0.0, 2: 0.628, 3: 0.308, 4: 0.064, 5: 0.0}",1.1985921998241156,0.5162055631538667,2.2951559745022596,5,0.3237889936255649
+A photo of a stove in United Arab Emirates,UAE,What's the maintenance score?,"{1: 0.012, 2: 0.496, 3: 0.28, 4: 0.152, 5: 0.06}",1.7491857021770163,0.7533332776447886,3.36168769396315,5,0.5904219234907875
+A photo of a stove in United Kingdom,United Kingdom,What's the maintenance score?,"{1: 0.004, 2: 0.052, 3: 0.056, 4: 0.152, 5: 0.736}",1.225122961982138,0.5276317404831476,2.3377537371389012,5,0.3344384342847253
+A photo of a stove in United States of America,United States,What's the maintenance score?,"{1: 0.0, 2: 0.064, 3: 0.1, 4: 0.28, 5: 0.556}",1.5710681845057537,0.6766222382015524,2.971246264740955,5,0.4928115661852388

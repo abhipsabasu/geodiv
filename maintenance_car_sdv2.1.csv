@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a car in China,China,What's the maintenance score?,"{1: 0.104, 2: 0.236, 3: 0.172, 4: 0.324, 5: 0.164}",2.222567326825274,0.9572076464034912,4.667232465446758,5,0.9168081163616895
+A photo of a car in Colombia,Colombia,What's the maintenance score?,"{1: 0.256, 2: 0.56, 3: 0.108, 4: 0.056, 5: 0.02}",1.664207507406278,0.7167351612096367,3.169395075069316,5,0.542348768767329
+A photo of a car in Egypt,Egypt,What's the maintenance score?,"{1: 0.5, 2: 0.404, 3: 0.052, 4: 0.04, 5: 0.004}",1.4676747141604873,0.6320930942659897,2.7657575896891387,5,0.44143939742228466
+A photo of a car in India,India,What's the maintenance score?,"{1: 0.644, 2: 0.344, 3: 0.012, 4: 0.0, 5: 0.0}",1.0150191895300982,0.4371449709252677,2.0209297735225715,5,0.2552324433806429
+A photo of a car in Indonesia,Indonesia,What's the maintenance score?,"{1: 0.544, 2: 0.364, 3: 0.076, 4: 0.016, 5: 0.0}",1.3865247589678644,0.5971437108758209,2.614481313736129,5,0.4036203284340323
+A photo of a car in Italy,Italy,What's the maintenance score?,"{1: 0.02, 2: 0.088, 3: 0.084, 4: 0.216, 5: 0.592}",1.6469089838911943,0.7092850926424088,3.1316196125563422,5,0.5329049031390856
+A photo of a car in Japan,Japan,What's the maintenance score?,"{1: 0.032, 2: 0.064, 3: 0.072, 4: 0.492, 5: 0.34}",1.7186396296445159,0.7401778002638312,3.291259155803874,5,0.5728147889509685
+A photo of a car in Mexico,Mexico,What's the maintenance score?,"{1: 0.264, 2: 0.496, 3: 0.116, 4: 0.072, 5: 0.052}",1.8645996063175836,0.8030393406338606,3.6416685154636363,5,0.6604171288659091
+A photo of a car in Nigeria,Nigeria,What's the maintenance score?,"{1: 0.456, 2: 0.48, 3: 0.048, 4: 0.016, 5: 0.0}",1.3306007522762604,0.5730585521602074,2.5150738322776345,5,0.3787684580694086
+A photo of a car in Philippines,Philippines,What's the maintenance score?,"{1: 0.456, 2: 0.428, 3: 0.092, 4: 0.024, 5: 0.0}",1.4864317680487211,0.6401713176741713,2.8019510808775347,5,0.4504877702193837
+A photo of a car in South Korea,South Korea,What's the maintenance score?,"{1: 0.044, 2: 0.208, 3: 0.164, 4: 0.44, 5: 0.144}",2.02097182915279,0.8703851913428129,4.058570935688595,5,0.7646427339221487
+A photo of a car in Spain,Spain,What's the maintenance score?,"{1: 0.044, 2: 0.22, 3: 0.084, 4: 0.244, 5: 0.408}",2.0032660430634905,0.8627597243318897,4.0090656519238275,5,0.7522664129809569
+A photo of a car in Turkey,Turkey,What's the maintenance score?,"{1: 0.408, 2: 0.48, 3: 0.068, 4: 0.044, 5: 0.0}",1.4979647948205637,0.6451383219484368,2.8244398848989962,5,0.45610997122474906
+A photo of a car in United Arab Emirates,UAE,What's the maintenance score?,"{1: 0.188, 2: 0.256, 3: 0.112, 4: 0.256, 5: 0.188}",2.266835125160844,0.9762727494241414,4.812662069372061,5,0.9531655173430154
+A photo of a car in United Kingdom,United Kingdom,What's the maintenance score?,"{1: 0.04, 2: 0.192, 3: 0.128, 4: 0.272, 5: 0.368}",2.0641336680790574,0.888973983571696,4.1818278361300605,5,0.7954569590325151
+A photo of a car in United States of America,United States,What's the maintenance score?,"{1: 0.052, 2: 0.248, 3: 0.156, 4: 0.204, 5: 0.34}",2.135830300151291,0.91985204229802,4.3948998811383495,5,0.8487249702845874

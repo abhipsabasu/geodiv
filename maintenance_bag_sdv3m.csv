@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a bag in China,China,What's the maintenance score?,"{1: 0.0, 2: 0.016, 3: 0.044, 4: 0.316, 5: 0.624}",1.2434835924480385,0.5355392336162591,2.367695563812993,5,0.34192389095324827
+A photo of a bag in Colombia,Colombia,What's the maintenance score?,"{1: 0.0, 2: 0.02, 3: 0.068, 4: 0.3, 5: 0.612}",1.3312312826826496,0.5733301068253916,2.5161732864762087,5,0.3790433216190522
+A photo of a bag in Egypt,Egypt,What's the maintenance score?,"{1: 0.0, 2: 0.004, 3: 0.012, 4: 0.232, 5: 0.752}",0.906662327322253,0.39047821046596004,1.8747033543705838,5,0.21867583859264594
+A photo of a bag in India,India,What's the maintenance score?,"{1: 0.0, 2: 0.008, 3: 0.044, 4: 0.384, 5: 0.564}",1.2502367304122024,0.53844765183086,2.3788045336816936,5,0.3447011334204234
+A photo of a bag in Indonesia,Indonesia,What's the maintenance score?,"{1: 0.0, 2: 0.02, 3: 0.052, 4: 0.292, 5: 0.636}",1.268500526667188,0.5463134407393109,2.409110431007785,5,0.3522776077519463
+A photo of a bag in Italy,Italy,What's the maintenance score?,"{1: 0.004, 2: 0.008, 3: 0.016, 4: 0.172, 5: 0.8}",0.8773817950335463,0.37786777160130297,1.8370384144030518,5,0.20925960360076296
+A photo of a bag in Japan,Japan,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.004, 4: 0.072, 5: 0.924}",0.4105335702898033,0.17680718502599388,1.3291773097837176,5,0.0822943274459294
+A photo of a bag in Mexico,Mexico,What's the maintenance score?,"{1: 0.0, 2: 0.004, 3: 0.024, 4: 0.172, 5: 0.8}",0.8553426950162386,0.36837604786281364,1.8091884552448763,5,0.20229711381121906
+A photo of a bag in Nigeria,Nigeria,What's the maintenance score?,"{1: 0.0, 2: 0.012, 3: 0.04, 4: 0.312, 5: 0.636}",1.2018485590120673,0.5176080007207844,2.300342305039338,5,0.3250855762598345
+A photo of a bag in Philippines,Philippines,What's the maintenance score?,"{1: 0.0, 2: 0.02, 3: 0.044, 4: 0.224, 5: 0.712}",1.1435610261553202,0.49250492669145074,2.2092566491053844,5,0.3023141622763461
+A photo of a bag in South Korea,South Korea,What's the maintenance score?,"{1: 0.0, 2: 0.008, 3: 0.004, 4: 0.092, 5: 0.896}",0.5462265745412286,0.235246981051636,1.4602613259647168,5,0.1150653314911792
+A photo of a bag in Spain,Spain,What's the maintenance score?,"{1: 0.0, 2: 0.012, 3: 0.008, 4: 0.172, 5: 0.808}",0.8176123187812221,0.3521264592911026,1.7624866365112812,5,0.1906216591278203
+A photo of a bag in Turkey,Turkey,What's the maintenance score?,"{1: 0.0, 2: 0.016, 3: 0.036, 4: 0.292, 5: 0.656}",1.185684098387736,0.5106463464559845,2.2747123158426943,5,0.31867807896067357
+A photo of a bag in United Arab Emirates,UAE,What's the maintenance score?,"{1: 0.0, 2: 0.016, 3: 0.032, 4: 0.12, 5: 0.832}",0.8421915676956762,0.3627121656136088,1.7927714357872517,5,0.19819285894681293
+A photo of a bag in United Kingdom,United Kingdom,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.016, 4: 0.088, 5: 0.896}",0.5459642920583916,0.23513402213468482,1.459995874055226,5,0.11499896851380648
+A photo of a bag in United States of America,United States,What's the maintenance score?,"{1: 0.0, 2: 0.012, 3: 0.016, 4: 0.132, 5: 0.84}",0.7689384760585743,0.331163776239107,1.7040155206086651,5,0.17600388015216628

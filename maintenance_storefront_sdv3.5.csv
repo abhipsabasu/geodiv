@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a storefront in China,China,What's the maintenance score?,"{1: 0.0, 2: 0.212, 3: 0.284, 4: 0.428, 5: 0.076}",1.7967466051539556,0.7738166436377594,3.4743584509572867,5,0.6185896127393217
+A photo of a storefront in Colombia,Colombia,What's the maintenance score?,"{1: 0.004, 2: 0.54, 3: 0.304, 4: 0.148, 5: 0.004}",1.4739348000547037,0.6347891665121546,2.777784731828491,5,0.4444461829571228
+A photo of a storefront in Egypt,Egypt,What's the maintenance score?,"{1: 0.004, 2: 0.372, 3: 0.42, 4: 0.204, 5: 0.0}",1.5560593197479429,0.6701582719870695,2.940495575578355,5,0.48512389389458876
+A photo of a storefront in India,India,What's the maintenance score?,"{1: 0.008, 2: 0.836, 3: 0.148, 4: 0.008, 5: 0.0}",0.7354329521293845,0.3167337325168378,1.6648970293060812,5,0.1662242573265203
+A photo of a storefront in Indonesia,Indonesia,What's the maintenance score?,"{1: 0.004, 2: 0.816, 3: 0.132, 4: 0.044, 5: 0.004}",0.8870101906379897,0.38201449587999364,1.849339619198772,5,0.21233490479969303
+A photo of a storefront in Italy,Italy,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.024, 4: 0.436, 5: 0.54}",1.1313363966345906,0.48724006532574055,2.1906156731081645,5,0.29765391827704113
+A photo of a storefront in Japan,Japan,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.008, 4: 0.608, 5: 0.384}",1.022418756211463,0.4403317908348325,2.03132172698633,5,0.2578304317465825
+A photo of a storefront in Mexico,Mexico,What's the maintenance score?,"{1: 0.0, 2: 0.74, 3: 0.224, 4: 0.036, 5: 0.0}",0.9775972012871894,0.4210281978325488,1.9691830155137242,5,0.24229575387843105
+A photo of a storefront in Nigeria,Nigeria,What's the maintenance score?,"{1: 0.036, 2: 0.896, 3: 0.06, 4: 0.008, 5: 0.0}",0.6138635387100394,0.2643766359783929,1.5303520104103263,5,0.13258800260258158
+A photo of a storefront in Philippines,Philippines,What's the maintenance score?,"{1: 0.016, 2: 0.844, 3: 0.116, 4: 0.024, 5: 0.0}",0.7916116739411168,0.3409285910636773,1.7310071381334486,5,0.18275178453336216
+A photo of a storefront in South Korea,South Korea,What's the maintenance score?,"{1: 0.0, 2: 0.032, 3: 0.088, 4: 0.724, 5: 0.156}",1.2229431338312535,0.5266929395979332,2.334224194584943,5,0.3335560486462358
+A photo of a storefront in Spain,Spain,What's the maintenance score?,"{1: 0.0, 2: 0.004, 3: 0.032, 4: 0.456, 5: 0.508}",1.2037346173227046,0.5184202818223353,2.303351545926885,5,0.3258378864817213
+A photo of a storefront in Turkey,Turkey,What's the maintenance score?,"{1: 0.0, 2: 0.148, 3: 0.344, 4: 0.448, 5: 0.06}",1.7000416701131629,0.7321680950656797,3.249103429618271,5,0.5622758574045678
+A photo of a storefront in United Arab Emirates,UAE,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.004, 4: 0.016, 5: 0.98}",0.15587910443956793,0.06713347617559608,1.114100287067245,5,0.02852507176681124
+A photo of a storefront in United Kingdom,United Kingdom,What's the maintenance score?,"{1: 0.0, 2: 0.016, 3: 0.08, 4: 0.544, 5: 0.36}",1.3953831367522305,0.6009588065301054,2.6305840322753156,5,0.4076460080688289
+A photo of a storefront in United States of America,United States,What's the maintenance score?,"{1: 0.0, 2: 0.216, 3: 0.324, 4: 0.368, 5: 0.092}",1.8517786834739334,0.7975176697122328,3.6094491600953345,5,0.6523622900238336

@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a backyard in China,China,What's the maintenance score?,"{1: 0.004, 2: 0.624, 3: 0.244, 4: 0.108, 5: 0.02}",1.412626977595298,0.608385324552363,2.6622147967412406,5,0.41555369918531015
+A photo of a backyard in Colombia,Colombia,What's the maintenance score?,"{1: 0.004, 2: 0.392, 3: 0.42, 4: 0.18, 5: 0.004}",1.5643013510098127,0.6737079216424648,2.9573425295263975,5,0.4893356323815994
+A photo of a backyard in Egypt,Egypt,What's the maintenance score?,"{1: 0.004, 2: 0.248, 3: 0.352, 4: 0.356, 5: 0.04}",1.7771854447062811,0.7653921103842336,3.4275683720269225,5,0.6068920930067306
+A photo of a backyard in India,India,What's the maintenance score?,"{1: 0.012, 2: 0.672, 3: 0.26, 4: 0.056, 5: 0.0}",1.200099919523482,0.5168549026845293,2.2975558307559423,5,0.32438895768898557
+A photo of a backyard in Indonesia,Indonesia,What's the maintenance score?,"{1: 0.004, 2: 0.124, 3: 0.292, 4: 0.428, 5: 0.152}",1.8610023187580333,0.8014900732093133,3.632599509342737,5,0.6581498773356842
+A photo of a backyard in Italy,Italy,What's the maintenance score?,"{1: 0.0, 2: 0.072, 3: 0.256, 4: 0.584, 5: 0.088}",1.5382621597322284,0.6624934523680202,2.9044442937635835,5,0.47611107344089587
+A photo of a backyard in Japan,Japan,What's the maintenance score?,"{1: 0.0, 2: 0.028, 3: 0.124, 4: 0.332, 5: 0.516}",1.5385516493509233,0.6626181287605976,2.905027154874621,5,0.4762567887186553
+A photo of a backyard in Mexico,Mexico,What's the maintenance score?,"{1: 0.0, 2: 0.076, 3: 0.292, 4: 0.584, 5: 0.048}",1.464577280026864,0.6307591019944617,2.7598259395578797,5,0.4399564848894699
+A photo of a backyard in Nigeria,Nigeria,What's the maintenance score?,"{1: 0.02, 2: 0.924, 3: 0.056, 4: 0.0, 5: 0.0}",0.45111773286067675,0.19428583247430867,1.3670990111457073,5,0.09177475278642683
+A photo of a backyard in Philippines,Philippines,What's the maintenance score?,"{1: 0.0, 2: 0.284, 3: 0.428, 4: 0.256, 5: 0.032}",1.7019082325430666,0.7329719797484198,3.253309848262249,5,0.5633274620655623
+A photo of a backyard in South Korea,South Korea,What's the maintenance score?,"{1: 0.008, 2: 0.552, 3: 0.304, 4: 0.12, 5: 0.016}",1.5136819489606654,0.6519073317962049,2.855378404159179,5,0.46384460103979475
+A photo of a backyard in Spain,Spain,What's the maintenance score?,"{1: 0.0, 2: 0.092, 3: 0.2, 4: 0.528, 5: 0.18}",1.712871694389292,0.7376936857609212,3.278126878445983,5,0.5695317196114957
+A photo of a backyard in Turkey,Turkey,What's the maintenance score?,"{1: 0.004, 2: 0.456, 3: 0.344, 4: 0.192, 5: 0.004}",1.5670385624469811,0.6748867744429436,2.9629587932452517,5,0.4907396983113129
+A photo of a backyard in United Arab Emirates,UAE,What's the maintenance score?,"{1: 0.0, 2: 0.032, 3: 0.084, 4: 0.436, 5: 0.448}",1.5002062504641247,0.6461036643500799,2.8288315110455287,5,0.45720787776138216
+A photo of a backyard in United Kingdom,United Kingdom,What's the maintenance score?,"{1: 0.0, 2: 0.04, 3: 0.116, 4: 0.704, 5: 0.14}",1.2998418835388417,0.5598114284421446,2.4620189795977105,5,0.36550474489942764
+A photo of a backyard in United States of America,United States,What's the maintenance score?,"{1: 0.0, 2: 0.016, 3: 0.092, 4: 0.596, 5: 0.296}",1.3769939502832242,0.593039014995864,2.597266314205489,5,0.39931657855137226

@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a dog in China,China,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 1.0}",-0.0,-0.0,1.0,5,0.0
+A photo of a dog in Colombia,Colombia,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.004, 5: 0.996}",0.037622360322278434,0.016203068650195867,1.0264208347602988,5,0.006605208690074693
+A photo of a dog in Egypt,Egypt,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 1.0}",-0.0,-0.0,1.0,5,0.0
+A photo of a dog in India,India,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 1.0}",-0.0,-0.0,1.0,5,0.0
+A photo of a dog in Indonesia,Indonesia,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 1.0}",-0.0,-0.0,1.0,5,0.0
+A photo of a dog in Italy,Italy,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 1.0}",-0.0,-0.0,1.0,5,0.0
+A photo of a dog in Japan,Japan,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 1.0}",-0.0,-0.0,1.0,5,0.0
+A photo of a dog in Mexico,Mexico,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 1.0}",-0.0,-0.0,1.0,5,0.0
+A photo of a dog in Nigeria,Nigeria,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 1.0}",-0.0,-0.0,1.0,5,0.0
+A photo of a dog in Philippines,Philippines,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 1.0}",-0.0,-0.0,1.0,5,0.0
+A photo of a dog in South Korea,South Korea,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 1.0}",-0.0,-0.0,1.0,5,0.0
+A photo of a dog in Spain,Spain,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 1.0}",-0.0,-0.0,1.0,5,0.0
+A photo of a dog in Turkey,Turkey,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 1.0}",-0.0,-0.0,1.0,5,0.0
+A photo of a dog in United Arab Emirates,UAE,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 1.0}",-0.0,-0.0,1.0,5,0.0
+A photo of a dog in United Kingdom,United Kingdom,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 1.0}",-0.0,-0.0,1.0,5,0.0
+A photo of a dog in United States of America,United States,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.004, 5: 0.996}",0.037622360322278434,0.016203068650195867,1.0264208347602988,5,0.006605208690074693

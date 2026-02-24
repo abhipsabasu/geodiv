@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a plate of food in China,China,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.004, 5: 0.996}",0.037622360322278434,0.016203068650195867,1.0264208347602988,5,0.006605208690074693
+A photo of a plate of food in Colombia,Colombia,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.028, 5: 0.972}",0.18426059333965514,0.07935671812808386,1.1362344837624294,5,0.034058620940607354
+A photo of a plate of food in Egypt,Egypt,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.004, 4: 0.012, 5: 0.984}",0.13133046139962115,0.056560951085779444,1.0953033304763478,5,0.02382583261908694
+A photo of a plate of food in India,India,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.004, 5: 0.996}",0.037622360322278434,0.016203068650195867,1.0264208347602988,5,0.006605208690074693
+A photo of a plate of food in Indonesia,Indonesia,What's the maintenance score?,"{1: 0.0, 2: 0.004, 3: 0.0, 4: 0.024, 5: 0.972}",0.20082743113996032,0.08649166681007947,1.1493573587202333,5,0.037339339680058314
+A photo of a plate of food in Italy,Italy,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.016, 5: 0.984}",0.11835001140827503,0.05097057556126269,1.0854926906916853,5,0.021373172672921326
+A photo of a plate of food in Japan,Japan,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.008, 5: 0.992}",0.06722154475830686,0.028950743524884134,1.0476970023725325,5,0.011924250593133123
+A photo of a plate of food in Mexico,Mexico,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.004, 4: 0.016, 5: 0.98}",0.15587910443956793,0.06713347617559608,1.114100287067245,5,0.02852507176681124
+A photo of a plate of food in Nigeria,Nigeria,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.004, 4: 0.02, 5: 0.976}",0.1789460813029628,0.07706788237628158,1.1320565922979018,5,0.03301414807447545
+A photo of a plate of food in Philippines,Philippines,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.012, 5: 0.988}",0.09377790984777166,0.04038794743655526,1.0671610453823117,5,0.016790261345577928
+A photo of a plate of food in South Korea,South Korea,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.012, 5: 0.988}",0.09377790984777166,0.04038794743655526,1.0671610453823117,5,0.016790261345577928
+A photo of a plate of food in Spain,Spain,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.008, 5: 0.992}",0.06722154475830686,0.028950743524884134,1.0476970023725325,5,0.011924250593133123
+A photo of a plate of food in Turkey,Turkey,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.004, 4: 0.004, 5: 0.992}",0.07522154475830685,0.03239615598947128,1.053522805787459,5,0.013380701446864762
+A photo of a plate of food in United Arab Emirates,UAE,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.004, 4: 0.02, 5: 0.976}",0.1789460813029628,0.07706788237628158,1.1320565922979018,5,0.03301414807447545
+A photo of a plate of food in United Kingdom,United Kingdom,What's the maintenance score?,"{1: 0.0, 2: 0.004, 3: 0.004, 4: 0.016, 5: 0.976}",0.19338464320071008,0.08328623251793302,1.143443153130983,5,0.03586078828274575
+A photo of a plate of food in United States of America,United States,What's the maintenance score?,"{1: 0.0, 2: 0.0, 3: 0.004, 4: 0.032, 5: 0.964}",0.2417589645364041,0.10411991872992603,1.182433430978244,5,0.04560835774456101

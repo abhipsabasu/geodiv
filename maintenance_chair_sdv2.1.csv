@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a chair in China,China,What's the maintenance score?,"{1: 0.036, 2: 0.284, 3: 0.428, 4: 0.152, 5: 0.1}",1.9577203314702458,0.8431442540279077,3.8844768976852957,5,0.7211192244213239
+A photo of a chair in Colombia,Colombia,What's the maintenance score?,"{1: 0.136, 2: 0.612, 3: 0.188, 4: 0.052, 5: 0.012}",1.5766628590567515,0.679031733380717,2.9827909286069016,5,0.4956977321517254
+A photo of a chair in Egypt,Egypt,What's the maintenance score?,"{1: 0.092, 2: 0.388, 3: 0.308, 4: 0.136, 5: 0.076}",2.043942709970448,0.8802782112292762,4.1237095176806955,5,0.7809273794201739
+A photo of a chair in India,India,What's the maintenance score?,"{1: 0.2, 2: 0.704, 3: 0.092, 4: 0.004, 5: 0.0}",1.1694054872292399,0.5036355302320282,2.249189921286233,5,0.31229748032155824
+A photo of a chair in Indonesia,Indonesia,What's the maintenance score?,"{1: 0.24, 2: 0.616, 3: 0.112, 4: 0.028, 5: 0.004}",1.4547603435599188,0.6265311775860526,2.741110226620291,5,0.43527755665507273
+A photo of a chair in Italy,Italy,What's the maintenance score?,"{1: 0.068, 2: 0.368, 3: 0.276, 4: 0.2, 5: 0.088}",2.0800120411622816,0.8958124266389842,4.228107451141692,5,0.8070268627854229
+A photo of a chair in Japan,Japan,What's the maintenance score?,"{1: 0.016, 2: 0.12, 3: 0.192, 4: 0.228, 5: 0.444}",1.9260250451615946,0.829493837213347,3.80006750003469,5,0.7000168750086725
+A photo of a chair in Mexico,Mexico,What's the maintenance score?,"{1: 0.104, 2: 0.612, 3: 0.216, 4: 0.06, 5: 0.008}",1.5499480580436902,0.6675262948307962,2.9280659696029234,5,0.48201649240073086
+A photo of a chair in Nigeria,Nigeria,What's the maintenance score?,"{1: 0.196, 2: 0.708, 3: 0.08, 4: 0.012, 5: 0.004}",1.2134626281571013,0.522609908045394,2.3189353962234116,5,0.3297338490558529
+A photo of a chair in Philippines,Philippines,What's the maintenance score?,"{1: 0.132, 2: 0.572, 3: 0.168, 4: 0.092, 5: 0.036}",1.7682835292335326,0.76155826406817,3.4064842330077276,5,0.6016210582519319
+A photo of a chair in South Korea,South Korea,What's the maintenance score?,"{1: 0.04, 2: 0.268, 3: 0.208, 4: 0.196, 5: 0.288}",2.1440822665885957,0.9234059708005756,4.420109979299301,5,0.8550274948248253
+A photo of a chair in Spain,Spain,What's the maintenance score?,"{1: 0.08, 2: 0.356, 3: 0.312, 4: 0.2, 5: 0.052}",2.032429340063757,0.8753196727060367,4.0909313855266545,5,0.7727328463816636
+A photo of a chair in Turkey,Turkey,What's the maintenance score?,"{1: 0.076, 2: 0.396, 3: 0.268, 4: 0.204, 5: 0.056}",2.021618023648755,0.8706634921641813,4.060389208823921,5,0.7650973022059802
+A photo of a chair in United Arab Emirates,UAE,What's the maintenance score?,"{1: 0.116, 2: 0.256, 3: 0.192, 4: 0.276, 5: 0.16}",2.256484443836074,0.971814953617475,4.778256974051047,5,0.9445642435127617
+A photo of a chair in United Kingdom,United Kingdom,What's the maintenance score?,"{1: 0.116, 2: 0.496, 3: 0.228, 4: 0.124, 5: 0.036}",1.8946405535059416,0.8159772723702072,3.7182932447877484,5,0.6795733111969371
+A photo of a chair in United States of America,United States,What's the maintenance score?,"{1: 0.076, 2: 0.508, 3: 0.232, 4: 0.144, 5: 0.04}",1.85629205788733,0.7994614742698911,3.620758760493406,5,0.6551896901233515

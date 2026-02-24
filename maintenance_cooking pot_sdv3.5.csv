@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a cooking pot in China,China,What's the maintenance score?,"{1: 0.0, 2: 0.092, 3: 0.392, 4: 0.508, 5: 0.008}",1.3983985049314198,0.6022574549188426,2.6360879498995753,5,0.4090219874748938
+A photo of a cooking pot in Colombia,Colombia,What's the maintenance score?,"{1: 0.008, 2: 0.572, 3: 0.34, 4: 0.08, 5: 0.0}",1.3373907141470407,0.5759828295681646,2.5269387826806797,5,0.38173469567016993
+A photo of a cooking pot in Egypt,Egypt,What's the maintenance score?,"{1: 0.0, 2: 0.26, 3: 0.476, 4: 0.256, 5: 0.008}",1.5740353979401076,0.6779001474705292,2.9773635619767838,5,0.49434089049419594
+A photo of a cooking pot in India,India,What's the maintenance score?,"{1: 0.0, 2: 0.448, 3: 0.448, 4: 0.104, 5: 0.0}",1.3775485438118,0.5932778654278807,2.5982649341115267,5,0.3995662335278817
+A photo of a cooking pot in Indonesia,Indonesia,What's the maintenance score?,"{1: 0.0, 2: 0.356, 3: 0.428, 4: 0.216, 5: 0.0}",1.5320196125910495,0.6598049336516463,2.891903902557936,5,0.472975975639484
+A photo of a cooking pot in Italy,Italy,What's the maintenance score?,"{1: 0.0, 2: 0.232, 3: 0.272, 4: 0.36, 5: 0.136}",1.9219807398836688,0.8277520497364519,3.78942969281173,5,0.6973574232029325
+A photo of a cooking pot in Japan,Japan,What's the maintenance score?,"{1: 0.0, 2: 0.052, 3: 0.156, 4: 0.504, 5: 0.288}",1.6553511913168957,0.7129209534790515,3.1499986085202876,5,0.5374996521300719
+A photo of a cooking pot in Mexico,Mexico,What's the maintenance score?,"{1: 0.0, 2: 0.408, 3: 0.44, 4: 0.152, 5: 0.0}",1.4619514891434418,0.629628235414569,2.7548074603577666,5,0.43870186508944164
+A photo of a cooking pot in Nigeria,Nigeria,What's the maintenance score?,"{1: 0.0, 2: 0.404, 3: 0.428, 4: 0.168, 5: 0.0}",1.4846096484238394,0.6393865734657294,2.7984144586841952,5,0.4496036146710488
+A photo of a cooking pot in Philippines,Philippines,What's the maintenance score?,"{1: 0.0, 2: 0.536, 3: 0.388, 4: 0.076, 5: 0.0}",1.294751804786403,0.5576192508447219,2.453347854508914,5,0.36333696362722845
+A photo of a cooking pot in South Korea,South Korea,What's the maintenance score?,"{1: 0.0, 2: 0.132, 3: 0.312, 4: 0.512, 5: 0.044}",1.6026637774017085,0.6902297194002704,3.037035510718643,5,0.5092588776796607
+A photo of a cooking pot in Spain,Spain,What's the maintenance score?,"{1: 0.008, 2: 0.396, 3: 0.272, 4: 0.28, 5: 0.044}",1.8083549343258376,0.7788160788904885,3.5024268859025898,5,0.6256067214756474
+A photo of a cooking pot in Turkey,Turkey,What's the maintenance score?,"{1: 0.0, 2: 0.172, 3: 0.388, 4: 0.44, 5: 0.0}",1.4879022901338703,0.6408046370643744,2.8048085326918013,5,0.4512021331729503
+A photo of a cooking pot in United Arab Emirates,UAE,What's the maintenance score?,"{1: 0.0, 2: 0.264, 3: 0.432, 4: 0.276, 5: 0.028}",1.6873941483284494,0.7267211039152811,3.220744346679551,5,0.5551860866698878
+A photo of a cooking pot in United Kingdom,United Kingdom,What's the maintenance score?,"{1: 0.0, 2: 0.112, 3: 0.188, 4: 0.38, 5: 0.32}",1.8635357077465233,0.8025811444591372,3.638983999596943,5,0.6597459998992358
+A photo of a cooking pot in United States of America,United States,What's the maintenance score?,"{1: 0.0, 2: 0.048, 3: 0.064, 4: 0.152, 5: 0.736}",1.202679502926085,0.5179658687856256,2.301667606615293,5,0.3254169016538232
