@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a cooking pot in China,China,What's the affluence score?,"{1: 0.0, 2: 0.344, 3: 0.468, 4: 0.176, 5: 0.012}",1.5599390053907136,0.6718291616461047,2.9484137781974673,5,0.4871034445493668
+A photo of a cooking pot in Colombia,Colombia,What's the affluence score?,"{1: 0.264, 2: 0.736, 3: 0.0, 4: 0.0, 5: 0.0}",0.832722637493494,0.3586341193454958,1.7810433572977709,5,0.19526083932444271
+A photo of a cooking pot in Egypt,Egypt,What's the affluence score?,"{1: 0.008, 2: 0.24, 3: 0.048, 4: 0.368, 5: 0.336}",1.819562887798783,0.7836430817152634,3.5297423708833358,5,0.6324355927208339
+A photo of a cooking pot in India,India,What's the affluence score?,"{1: 0.072, 2: 0.908, 3: 0.016, 4: 0.004, 5: 0.0}",0.5270436580980896,0.22698534862409542,1.440973354175425,5,0.11024333854385626
+A photo of a cooking pot in Indonesia,Indonesia,What's the affluence score?,"{1: 0.012, 2: 0.96, 3: 0.028, 4: 0.0, 5: 0.0}",0.27754382505164255,0.11953161928776539,1.2121294875057187,5,0.053032371876429674
+A photo of a cooking pot in Italy,Italy,What's the affluence score?,"{1: 0.032, 2: 0.352, 3: 0.484, 4: 0.128, 5: 0.004}",1.6073345480608547,0.6922413108313017,3.0468839425939915,5,0.5117209856484979
+A photo of a cooking pot in Japan,Japan,What's the affluence score?,"{1: 0.0, 2: 0.12, 3: 0.496, 4: 0.344, 5: 0.04}",1.5841638438241585,0.6822622316825048,2.9983396992734987,5,0.4995849248183747
+A photo of a cooking pot in Mexico,Mexico,What's the affluence score?,"{1: 0.296, 2: 0.7, 3: 0.004, 4: 0.0, 5: 0.0}",0.9119383101532877,0.39275045259208435,1.8815717570293966,5,0.22039293925734915
+A photo of a cooking pot in Nigeria,Nigeria,What's the affluence score?,"{1: 0.204, 2: 0.796, 3: 0.0, 4: 0.0, 5: 0.0}",0.7298563169471574,0.3143320064709252,1.658473910177218,5,0.16461847754430448
+A photo of a cooking pot in Philippines,Philippines,What's the affluence score?,"{1: 0.028, 2: 0.972, 3: 0.0, 4: 0.0, 5: 0.0}",0.18426059333965514,0.07935671812808386,1.1362344837624294,5,0.034058620940607354
+A photo of a cooking pot in South Korea,South Korea,What's the affluence score?,"{1: 0.0, 2: 0.316, 3: 0.54, 4: 0.14, 5: 0.004}",1.4342095234583787,0.6176804211191359,2.7023406031060295,5,0.4255851507765074
+A photo of a cooking pot in Spain,Spain,What's the affluence score?,"{1: 0.116, 2: 0.66, 3: 0.2, 4: 0.02, 5: 0.004}",1.365276027972358,0.5879923805472487,2.5762561218280062,5,0.39406403045700156
+A photo of a cooking pot in Turkey,Turkey,What's the affluence score?,"{1: 0.06, 2: 0.856, 3: 0.084, 4: 0.0, 5: 0.0}",0.7357204450527783,0.3168575489795555,1.6652288345696928,5,0.1663072086424232
+A photo of a cooking pot in United Arab Emirates,UAE,What's the affluence score?,"{1: 0.052, 2: 0.716, 3: 0.184, 4: 0.036, 5: 0.012}",1.2654770728224753,0.5450113100439763,2.4040669485271264,5,0.3510167371317816
+A photo of a cooking pot in United Kingdom,United Kingdom,What's the affluence score?,"{1: 0.02, 2: 0.284, 3: 0.472, 4: 0.212, 5: 0.012}",1.6908713351501692,0.7282186467674375,3.2285163542166857,5,0.5571290885541714
+A photo of a cooking pot in United States of America,United States,What's the affluence score?,"{1: 0.004, 2: 0.052, 3: 0.56, 4: 0.356, 5: 0.028}",1.3969958905879185,0.6016533818010792,2.633526342699215,5,0.40838158567480376

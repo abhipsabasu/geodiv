@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a backyard in China,China,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.016, 5: 0.984}",0.11835001140827503,0.05097057556126269,1.0854926906916853,5,0.021373172672921326
+A photo of a backyard in Colombia,Colombia,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.38, 5: 0.62}",0.9580420222262995,0.41260624062209583,1.94267157559583,5,0.23566789389895748
+A photo of a backyard in Egypt,Egypt,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.012, 5: 0.988}",0.09377790984777166,0.04038794743655526,1.0671610453823117,5,0.016790261345577928
+A photo of a backyard in India,India,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.184, 5: 0.816}",0.6887498056988564,0.2966283956921017,1.611886103081181,5,0.15297152577029527
+A photo of a backyard in Indonesia,Indonesia,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.048, 5: 0.952}",0.2778395739583094,0.11965899140894262,1.212377996516553,5,0.05309449912913827
+A photo of a backyard in Italy,Italy,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.152, 5: 0.848}",0.6148227571490692,0.26478974887415474,1.5313698485087563,5,0.1328424621271891
+A photo of a backyard in Japan,Japan,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.008, 5: 0.992}",0.06722154475830686,0.028950743524884134,1.0476970023725325,5,0.011924250593133123
+A photo of a backyard in Mexico,Mexico,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.128, 5: 0.872}",0.5519275534566073,0.2377022590285603,1.4660431363466553,5,0.11651078408666382
+A photo of a backyard in Nigeria,Nigeria,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.004, 4: 0.368, 5: 0.628}",0.9840916545291645,0.4238252066013712,1.9780674955533604,5,0.2445168738883401
+A photo of a backyard in Philippines,Philippines,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.12, 5: 0.88}",0.5293608652873644,0.22798331544071518,1.4432896557346915,5,0.11082241393367287
+A photo of a backyard in South Korea,South Korea,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.06, 5: 0.94}",0.32744491915447627,0.1410228507400703,1.2547891148657844,5,0.06369727871644609
+A photo of a backyard in Spain,Spain,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.068, 5: 0.932}",0.3584153246392747,0.15436107837640065,1.2820169394916339,5,0.07050423487290847
+A photo of a backyard in Turkey,Turkey,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.116, 5: 0.884}",0.5177526267252631,0.2229839192114946,1.431723228172233,5,0.10793080704305824
+A photo of a backyard in United Arab Emirates,UAE,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 1.0}",-0.0,-0.0,1.0,5,0.0
+A photo of a backyard in United Kingdom,United Kingdom,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.824, 5: 0.176}",0.6712478853829508,0.2890907288907727,1.5924497904542831,5,0.14811244761357079
+A photo of a backyard in United States of America,United States,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.66, 5: 0.34}",0.9248187049730301,0.3982977366996774,1.8984456603756208,5,0.2246114150939052

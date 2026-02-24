@@ -173,10 +173,17 @@
             box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
         }
 
-        .grid-image-container {
+        .view-panels {
             margin-top: 40px;
+        }
+
+        .view-panel {
             display: none;
             text-align: center;
+        }
+
+        .view-panel.active {
+            display: block;
         }
 
         .grid-image-container img {
@@ -184,6 +191,34 @@
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .view-placeholder {
+            padding: 40px 20px;
+            min-height: 120px;
+            color: #666;
+        }
+
+        .view-placeholder-text {
+            font-size: 1.1em;
+            font-style: italic;
+        }
+
+        #affluenceContent.distribution-list {
+            text-align: left;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #affluenceContent .distribution-line {
+            font-family: 'Segoe UI', monospace;
+            padding: 4px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        #affluenceContent .distribution-line:last-child {
+            border-bottom: none;
         }
 
         @media (max-width: 768px) {
@@ -290,9 +325,34 @@
                         <option value="FLUX.1-dev">FLUX.1-dev</option>
                     </select>
                 </div>
+                <div class="dropdown-group">
+                    <label for="view">View:</label>
+                    <select id="view" name="view">
+                        <option value="">Select a view...</option>
+                        <option value="display-images">Display images</option>
+                        <option value="affluence-distribution">Affluence Distribution</option>
+                        <option value="maintenance-distribution">Maintenance Distribution</option>
+                        <option value="entity-appearance">Entity-Appearance</option>
+                        <option value="background-appearance">Background Appearance</option>
+                    </select>
+                </div>
             </div>
-            <div class="grid-image-container" id="gridImageContainer">
-                <img id="gridImage" src="" alt="Sample Grid">
+            <div class="view-panels">
+                <div class="grid-image-container view-panel" id="gridImageContainer" data-view="display-images">
+                    <img id="gridImage" src="" alt="Sample Grid">
+                </div>
+                <div class="view-panel view-placeholder" id="affluencePanel" data-view="affluence-distribution">
+                    <div id="affluenceContent"></div>
+                </div>
+                <div class="view-panel view-placeholder" id="maintenancePanel" data-view="maintenance-distribution">
+                    <p class="view-placeholder-text">Maintenance Distribution</p>
+                </div>
+                <div class="view-panel view-placeholder" id="entityAppearancePanel" data-view="entity-appearance">
+                    <p class="view-placeholder-text">Entity-Appearance</p>
+                </div>
+                <div class="view-panel view-placeholder" id="backgroundAppearancePanel" data-view="background-appearance">
+                    <p class="view-placeholder-text">Background Appearance</p>
+                </div>
             </div>
         </div>
     </div>
@@ -344,12 +404,112 @@
             return modelMapping[model] || model;
         }
 
+        // Entity name as used in affluence CSV filename (e.g. "cooking pot", "storefront")
+        function getEntityCsvName(entity) {
+            if (entity === 'shopfront') return 'storefront';
+            return entity;
+        }
+
+        // Model name as used in affluence CSV filename (lowercase: sdv2.1, flux.1-dev)
+        function getModelCsvName(model) {
+            const m = { 'SDv2.1': 'sdv2.1', 'SDv3m': 'sdv3m', 'SDv3.5': 'sdv3.5', 'FLUX.1-dev': 'flux.1-dev' };
+            return m[model] || model.toLowerCase();
+        }
+
+        function parseDistributionString(str) {
+            // str is like "{1: 0.036, 2: 0.252, 3: 0.316}" - return array of [key, value]
+            const pairs = [];
+            const regex = /(\d+)\s*:\s*([\d.]+)/g;
+            let match;
+            while ((match = regex.exec(str)) !== null) {
+                pairs.push([match[1], match[2]]);
+            }
+            return pairs;
+        }
+
+        function loadAffluenceDistribution(entity, country, model) {
+            const container = document.getElementById('affluenceContent');
+            container.innerHTML = '';
+            container.className = '';
+
+            if (!entity || !country || !model) {
+                container.innerHTML = '<p class="view-placeholder-text">Select entity, country and model to see affluence distribution.</p>';
+                return;
+            }
+
+            const entityCsv = getEntityCsvName(entity);
+            const modelCsv = getModelCsvName(model);
+            const csvPath = `affluence_${entityCsv}_${modelCsv}.csv`;
+
+            container.innerHTML = '<p class="view-placeholder-text">Loading…</p>';
+
+            fetch(csvPath)
+                .then(function(res) {
+                    if (!res.ok) throw new Error('CSV not found');
+                    return res.text();
+                })
+                .then(function(text) {
+                    const lines = text.trim().split(/\r?\n/);
+                    if (lines.length < 2) throw new Error('Empty or invalid CSV');
+                    const headers = lines[0].split(',');
+                    const countryIdx = headers.map(function(h) { return h.trim(); }).indexOf('country');
+                    const distIdx = headers.map(function(h) { return h.trim(); }).indexOf('distribution');
+                    if (countryIdx === -1 || distIdx === -1) throw new Error('Missing country or distribution column');
+                    let row = null;
+                    for (let i = 1; i < lines.length; i++) {
+                        const parsed = parseCsvLine(lines[i]);
+                        if (parsed[countryIdx] === country) {
+                            row = parsed;
+                            break;
+                        }
+                    }
+                    if (!row) {
+                        container.innerHTML = '<p class="view-placeholder-text">No row found for country: ' + country + '</p>';
+                        return;
+                    }
+                    const distStr = row[distIdx];
+                    const pairs = parseDistributionString(distStr);
+                    container.className = 'distribution-list';
+                    container.innerHTML = '';
+                    pairs.forEach(function(p) {
+                        const line = document.createElement('div');
+                        line.className = 'distribution-line';
+                        line.textContent = p[0] + ': ' + p[1];
+                        container.appendChild(line);
+                    });
+                })
+                .catch(function(err) {
+                    container.innerHTML = '<p class="view-placeholder-text">Could not load distribution. ' + (err.message || '') + '</p>';
+                });
+        }
+
+        function parseCsvLine(line) {
+            const out = [];
+            let cur = '';
+            let inQuotes = false;
+            for (let i = 0; i < line.length; i++) {
+                const c = line[i];
+                if (c === '"') {
+                    inQuotes = !inQuotes;
+                } else if (!inQuotes && c === ',') {
+                    out.push(cur.trim());
+                    cur = '';
+                } else {
+                    cur += c;
+                }
+            }
+            out.push(cur.trim());
+            return out;
+        }
+
         function loadGridImage(entity, country, model) {
             const gridImageContainer = document.getElementById('gridImageContainer');
             const gridImage = document.getElementById('gridImage');
             
             if (!entity || !country || !model) {
-                gridImageContainer.style.display = 'none';
+                gridImage.style.display = 'none';
+                const existingMsg = gridImageContainer.querySelector('.grid-error-msg');
+                if (existingMsg) existingMsg.remove();
                 return;
             }
 
@@ -361,46 +521,70 @@
             // Construct grid image path
             const gridImagePath = `grid_images/${modelFolder}_${entityFolder}_${countryFolder}.png`;
             
-            // Set image source
+            gridImage.style.display = 'block';
             gridImage.src = gridImagePath;
             gridImage.alt = `${entity} in ${country} - ${model}`;
-            
-            // Show container
-            gridImageContainer.style.display = 'block';
+            const existingMsg = gridImageContainer.querySelector('.grid-error-msg');
+            if (existingMsg) existingMsg.remove();
             
             // Handle image load error
             gridImage.onerror = function() {
                 console.error('Failed to load image:', gridImagePath);
-                gridImageContainer.innerHTML = '<p style="color: #666; font-style: italic; padding: 20px;">Grid image not found for this combination.<br>Expected: ' + gridImagePath + '</p>';
+                gridImage.style.display = 'none';
+                const msg = document.createElement('p');
+                msg.className = 'grid-error-msg';
+                msg.style.cssText = 'color: #666; font-style: italic; padding: 20px;';
+                msg.innerHTML = 'Grid image not found for this combination.<br>Expected: ' + gridImagePath;
+                gridImageContainer.appendChild(msg);
             };
             
-            // Reset onerror handler on successful load
             gridImage.onload = function() {
                 console.log('Successfully loaded:', gridImagePath);
             };
         }
 
-        // Add event listeners to dropdowns
-        document.getElementById('entity').addEventListener('change', function() {
-            const entity = this.value;
-            const country = document.getElementById('country').value;
-            const model = document.getElementById('model').value;
-            loadGridImage(entity, country, model);
-        });
-
-        document.getElementById('country').addEventListener('change', function() {
-            const entity = document.getElementById('entity').value;
-            const country = this.value;
-            const model = document.getElementById('model').value;
-            loadGridImage(entity, country, model);
-        });
-
-        document.getElementById('model').addEventListener('change', function() {
+        function setActiveView(viewValue) {
+            document.querySelectorAll('.view-panel').forEach(function(panel) {
+                panel.classList.toggle('active', panel.getAttribute('data-view') === viewValue);
+            });
             const entity = document.getElementById('entity').value;
             const country = document.getElementById('country').value;
-            const model = this.value;
-            loadGridImage(entity, country, model);
+            const model = document.getElementById('model').value;
+            if (viewValue === 'display-images') {
+                loadGridImage(entity, country, model);
+            } else if (viewValue === 'affluence-distribution') {
+                loadAffluenceDistribution(entity, country, model);
+            }
+        }
+
+        // View dropdown: show selected panel; for "display images" load the grid
+        document.getElementById('view').addEventListener('change', function() {
+            const viewValue = this.value;
+            if (!viewValue) {
+                document.querySelectorAll('.view-panel').forEach(function(panel) {
+                    panel.classList.remove('active');
+                });
+                return;
+            }
+            setActiveView(viewValue);
         });
+
+        // Entity, country, model: update current view content when filters change
+        function onFilterChange() {
+            const viewValue = document.getElementById('view').value;
+            const entity = document.getElementById('entity').value;
+            const country = document.getElementById('country').value;
+            const model = document.getElementById('model').value;
+            if (viewValue === 'display-images') {
+                loadGridImage(entity, country, model);
+            } else if (viewValue === 'affluence-distribution') {
+                loadAffluenceDistribution(entity, country, model);
+            }
+        }
+
+        document.getElementById('entity').addEventListener('change', onFilterChange);
+        document.getElementById('country').addEventListener('change', onFilterChange);
+        document.getElementById('model').addEventListener('change', onFilterChange);
     </script>
 </body>
 </html>

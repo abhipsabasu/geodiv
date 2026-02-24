@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a storefront in China,China,What's the affluence score?,"{1: 0.0, 2: 0.224, 3: 0.768, 4: 0.008, 5: 0.0}",0.8316855815673357,0.35818748366868836,1.779763545682367,5,0.19494088642059176
+A photo of a storefront in Colombia,Colombia,What's the affluence score?,"{1: 0.0, 2: 0.708, 3: 0.292, 4: 0.0, 5: 0.0}",0.8712907840103599,0.37524451593864994,1.8292988482173433,5,0.20732471205433584
+A photo of a storefront in Egypt,Egypt,What's the affluence score?,"{1: 0.0, 2: 0.292, 3: 0.632, 4: 0.068, 5: 0.008}",1.2564186074161696,0.5411100413413616,2.3890194632381503,5,0.34725486580953757
+A photo of a storefront in India,India,What's the affluence score?,"{1: 0.004, 2: 0.9, 3: 0.096, 4: 0.0, 5: 0.0}",0.4932248124975227,0.21242036460282776,1.4075877000220587,5,0.10189692500551467
+A photo of a storefront in Indonesia,Indonesia,What's the affluence score?,"{1: 0.0, 2: 0.872, 3: 0.128, 4: 0.0, 5: 0.0}",0.5519275534566073,0.2377022590285603,1.4660431363466553,5,0.11651078408666382
+A photo of a storefront in Italy,Italy,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.22, 4: 0.772, 5: 0.008}",0.8245083149157039,0.3550964031707886,1.770931383989801,5,0.19273284599745028
+A photo of a storefront in Japan,Japan,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.98, 4: 0.02, 5: 0.0}",0.14144054254182067,0.06091512603394466,1.1030059264441499,5,0.025751481611037463
+A photo of a storefront in Mexico,Mexico,What's the affluence score?,"{1: 0.0, 2: 0.8, 3: 0.2, 4: 0.0, 5: 0.0}",0.7219280948873623,0.31091750708257115,1.6493848884661177,5,0.16234622211652944
+A photo of a storefront in Nigeria,Nigeria,What's the affluence score?,"{1: 0.004, 2: 0.98, 3: 0.016, 4: 0.0, 5: 0.0}",0.15587910443956793,0.06713347617559608,1.114100287067245,5,0.02852507176681124
+A photo of a storefront in Philippines,Philippines,What's the affluence score?,"{1: 0.0, 2: 0.932, 3: 0.068, 4: 0.0, 5: 0.0}",0.3584153246392747,0.15436107837640065,1.2820169394916339,5,0.07050423487290847
+A photo of a storefront in South Korea,South Korea,What's the affluence score?,"{1: 0.0, 2: 0.044, 3: 0.956, 4: 0.0, 5: 0.0}",0.26034062501245037,0.11212260430703803,1.1977614666324659,5,0.049440366658116464
+A photo of a storefront in Spain,Spain,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.444, 4: 0.54, 5: 0.016}",1.0955832175951914,0.4718420092368703,2.1369945335778513,5,0.2842486333944628
+A photo of a storefront in Turkey,Turkey,What's the affluence score?,"{1: 0.0, 2: 0.244, 3: 0.756, 4: 0.0, 5: 0.0}",0.8016291015856118,0.3452428623223577,1.7430683009343368,5,0.1857670752335842
+A photo of a storefront in United Arab Emirates,UAE,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.224, 4: 0.512, 5: 0.264}",1.485216734610552,0.6396480312550766,2.799592279504747,5,0.44989806987618675
+A photo of a storefront in United Kingdom,United Kingdom,What's the affluence score?,"{1: 0.0, 2: 0.008, 3: 0.284, 4: 0.608, 5: 0.1}",1.340130555571585,0.5771628150425543,2.5317422856338516,5,0.3829355714084629
+A photo of a storefront in United States of America,United States,What's the affluence score?,"{1: 0.0, 2: 0.268, 3: 0.588, 4: 0.136, 5: 0.008}",1.4067700964455754,0.6058629031377556,2.651428963162726,5,0.41285724079068153

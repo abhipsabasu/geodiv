@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a chair in China,China,What's the affluence score?,"{1: 0.028, 2: 0.16, 3: 0.076, 4: 0.376, 5: 0.36}",1.911234837731309,0.8231240415840801,3.7613090152250344,5,0.6903272538062586
+A photo of a chair in Colombia,Colombia,What's the affluence score?,"{1: 0.324, 2: 0.624, 3: 0.052, 4: 0.0, 5: 0.0}",1.173159033814089,0.5052520947557592,2.2550493933439095,5,0.3137623483359774
+A photo of a chair in Egypt,Egypt,What's the affluence score?,"{1: 0.008, 2: 0.088, 3: 0.068, 4: 0.368, 5: 0.468}",1.6714053404229676,0.7198350991588516,3.185247198279739,5,0.5463117995699347
+A photo of a chair in India,India,What's the affluence score?,"{1: 0.228, 2: 0.676, 3: 0.068, 4: 0.028, 5: 0.0}",1.2763374514831332,0.5496886205449221,2.4222326704513244,5,0.3555581676128311
+A photo of a chair in Indonesia,Indonesia,What's the affluence score?,"{1: 0.252, 2: 0.576, 3: 0.06, 4: 0.076, 5: 0.036}",1.6582597162991897,0.7141735870074963,3.156355524504172,5,0.539088881126043
+A photo of a chair in Italy,Italy,What's the affluence score?,"{1: 0.0, 2: 0.116, 3: 0.5, 4: 0.316, 5: 0.068}",1.6494241572672574,0.7103683188549694,3.137083994138606,5,0.5342709985346515
+A photo of a chair in Japan,Japan,What's the affluence score?,"{1: 0.0, 2: 0.004, 3: 0.3, 4: 0.516, 5: 0.18}",1.4908118563755821,0.6420577190388413,2.8104708595719825,5,0.4526177148929956
+A photo of a chair in Mexico,Mexico,What's the affluence score?,"{1: 0.292, 2: 0.628, 3: 0.076, 4: 0.004, 5: 0.0}",1.2544911921434676,0.5402799487657363,2.3858299062043242,5,0.34645747655108106
+A photo of a chair in Nigeria,Nigeria,What's the affluence score?,"{1: 0.66, 2: 0.32, 3: 0.012, 4: 0.0, 5: 0.008}",1.0539750828872387,0.45392236099299516,2.0762426815189112,5,0.2690606703797278
+A photo of a chair in Philippines,Philippines,What's the affluence score?,"{1: 0.436, 2: 0.524, 3: 0.024, 4: 0.012, 5: 0.004}",1.2482836162277615,0.5376064913363806,2.3755862975024082,5,0.34389657437560206
+A photo of a chair in South Korea,South Korea,What's the affluence score?,"{1: 0.0, 2: 0.024, 3: 0.264, 4: 0.58, 5: 0.132}",1.47781784117017,0.6364615012946211,2.7852712627660017,5,0.4463178156915004
+A photo of a chair in Spain,Spain,What's the affluence score?,"{1: 0.004, 2: 0.148, 3: 0.636, 4: 0.2, 5: 0.012}",1.3960008390245535,0.6012248364186636,2.631710580574924,5,0.40792764514373103
+A photo of a chair in Turkey,Turkey,What's the affluence score?,"{1: 0.116, 2: 0.24, 3: 0.208, 4: 0.284, 5: 0.152}",2.2547001209251425,0.9710464875677035,4.772350886567645,5,0.9430877216419113
+A photo of a chair in United Arab Emirates,UAE,What's the affluence score?,"{1: 0.028, 2: 0.088, 3: 0.216, 4: 0.332, 5: 0.336}",1.9873609186762402,0.8559097601050596,3.96511007963692,5,0.74127751990923
+A photo of a chair in United Kingdom,United Kingdom,What's the affluence score?,"{1: 0.004, 2: 0.152, 3: 0.36, 4: 0.368, 5: 0.116}",1.8668355926762,0.8040023275426886,3.647316995719957,5,0.6618292489299893
+A photo of a chair in United States of America,United States,What's the affluence score?,"{1: 0.008, 2: 0.144, 3: 0.5, 4: 0.216, 5: 0.132}",1.8215072179007255,0.7844804591113265,3.534502636132191,5,0.6336256590330478

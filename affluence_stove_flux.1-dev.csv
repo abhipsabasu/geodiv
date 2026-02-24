@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a stove in China,China,What's the affluence score?,"{1: 0.104, 2: 0.308, 3: 0.184, 4: 0.208, 5: 0.196}",2.2442583087069656,0.9665494438215304,4.73793467950096,5,0.9344836698752399
+A photo of a stove in Colombia,Colombia,What's the affluence score?,"{1: 0.288, 2: 0.48, 3: 0.152, 4: 0.06, 5: 0.02}",1.7950014186769288,0.7730650327326373,3.470158160993261,5,0.6175395402483153
+A photo of a stove in Egypt,Egypt,What's the affluence score?,"{1: 0.064, 2: 0.308, 3: 0.268, 4: 0.252, 5: 0.108}",2.1340997361297407,0.9191067289416931,4.389631203009326,5,0.8474078007523316
+A photo of a stove in India,India,What's the affluence score?,"{1: 0.36, 2: 0.416, 3: 0.096, 4: 0.076, 5: 0.052}",1.8859124908024296,0.81221830036641,3.6958661037486844,5,0.6739665259371711
+A photo of a stove in Indonesia,Indonesia,What's the affluence score?,"{1: 0.276, 2: 0.48, 3: 0.132, 4: 0.072, 5: 0.04}",1.8655523010445665,0.8034496439197724,3.644074113367449,5,0.6610185283418623
+A photo of a stove in Italy,Italy,What's the affluence score?,"{1: 0.008, 2: 0.148, 3: 0.204, 4: 0.408, 5: 0.232}",1.9482092863928506,0.8390480698702942,3.858952501591794,5,0.7147381253979485
+A photo of a stove in Japan,Japan,What's the affluence score?,"{1: 0.004, 2: 0.016, 3: 0.04, 4: 0.332, 5: 0.608}",1.2776541414857134,0.5502556880632831,2.4244443543347662,5,0.35611108858369156
+A photo of a stove in Mexico,Mexico,What's the affluence score?,"{1: 0.096, 2: 0.24, 3: 0.216, 4: 0.24, 5: 0.208}",2.261573236860111,0.9740065774818151,4.795140996286093,5,0.9487852490715232
+A photo of a stove in Nigeria,Nigeria,What's the affluence score?,"{1: 0.46, 2: 0.396, 3: 0.104, 4: 0.028, 5: 0.012}",1.6051624211632085,0.6913058266953248,3.042299994725048,5,0.510574998681262
+A photo of a stove in Philippines,Philippines,What's the affluence score?,"{1: 0.34, 2: 0.372, 3: 0.112, 4: 0.124, 5: 0.052}",2.00885732954132,0.8651677603473636,4.024633271781882,5,0.7561583179454705
+A photo of a stove in South Korea,South Korea,What's the affluence score?,"{1: 0.128, 2: 0.228, 3: 0.176, 4: 0.24, 5: 0.228}",2.287472730376756,0.9851608822054081,4.882001472888102,5,0.9705003682220255
+A photo of a stove in Spain,Spain,What's the affluence score?,"{1: 0.012, 2: 0.084, 3: 0.272, 4: 0.416, 5: 0.216}",1.8915815551059216,0.8146598334681346,3.710417565823702,5,0.6776043914559255
+A photo of a stove in Turkey,Turkey,What's the affluence score?,"{1: 0.016, 2: 0.144, 3: 0.38, 4: 0.34, 5: 0.12}",1.9247501635287931,0.8289447755797811,3.7967109373538905,5,0.6991777343384726
+A photo of a stove in United Arab Emirates,UAE,What's the affluence score?,"{1: 0.0, 2: 0.036, 3: 0.188, 4: 0.404, 5: 0.372}",1.6849197637308553,0.7256554444734394,3.2152251415055457,5,0.5538062853763864
+A photo of a stove in United Kingdom,United Kingdom,What's the affluence score?,"{1: 0.0, 2: 0.02, 3: 0.208, 4: 0.688, 5: 0.084}",1.2554294466425335,0.5406840329839908,2.3873820316677534,5,0.34684550791693836
+A photo of a stove in United States of America,United States,What's the affluence score?,"{1: 0.0, 2: 0.024, 3: 0.06, 4: 0.212, 5: 0.704}",1.2035727530202127,0.5183505706616632,2.303093134088907,5,0.3257732835222268

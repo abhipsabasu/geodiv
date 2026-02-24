@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a house in China,China,What's the affluence score?,"{1: 0.0, 2: 0.04, 3: 0.076, 4: 0.388, 5: 0.496}",1.5000171171243846,0.6460222090543036,2.828460683346412,5,0.457115170836603
+A photo of a house in Colombia,Colombia,What's the affluence score?,"{1: 0.056, 2: 0.8, 3: 0.14, 4: 0.004, 5: 0.0}",0.9193878348347861,0.3959587882411949,1.8913126003451342,5,0.22282815008628354
+A photo of a house in Egypt,Egypt,What's the affluence score?,"{1: 0.008, 2: 0.0, 3: 0.004, 4: 0.308, 5: 0.68}",0.98922819355442,0.4260373935491779,1.9851227148127222,5,0.24628067870318054
+A photo of a house in India,India,What's the affluence score?,"{1: 0.036, 2: 0.608, 3: 0.188, 4: 0.152, 5: 0.016}",1.570979370277643,0.6765839879954818,2.9710633564938616,5,0.4927658391234654
+A photo of a house in Indonesia,Indonesia,What's the affluence score?,"{1: 0.004, 2: 0.272, 3: 0.452, 4: 0.232, 5: 0.04}",1.7353447861652385,0.7473723195762533,3.329590574490441,5,0.5823976436226103
+A photo of a house in Italy,Italy,What's the affluence score?,"{1: 0.0, 2: 0.072, 3: 0.624, 4: 0.292, 5: 0.012}",1.2930103787865785,0.5568692594889779,2.450388291904629,5,0.3625970729761573
+A photo of a house in Japan,Japan,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.032, 4: 0.176, 5: 0.792}",0.8664738766788719,0.3731699868685662,1.8232013230957507,5,0.20580033077393767
+A photo of a house in Mexico,Mexico,What's the affluence score?,"{1: 0.028, 2: 0.564, 3: 0.316, 4: 0.092, 5: 0.0}",1.4523089677103451,0.625475427472614,2.7364565848647886,5,0.43411414621619715
+A photo of a house in Nigeria,Nigeria,What's the affluence score?,"{1: 0.004, 2: 0.424, 3: 0.384, 4: 0.188, 5: 0.0}",1.540257707534971,0.6633528880271763,2.9084645250816186,5,0.47711613127040464
+A photo of a house in Philippines,Philippines,What's the affluence score?,"{1: 0.004, 2: 0.412, 3: 0.516, 4: 0.068, 5: 0.0}",1.3152053304591789,0.5664281048819387,2.4883774377955694,5,0.37209435944889235
+A photo of a house in South Korea,South Korea,What's the affluence score?,"{1: 0.0, 2: 0.004, 3: 0.036, 4: 0.38, 5: 0.58}",1.1907745812357415,0.5128386980878952,2.282752709972132,5,0.320688177493033
+A photo of a house in Spain,Spain,What's the affluence score?,"{1: 0.0, 2: 0.072, 3: 0.592, 4: 0.328, 5: 0.008}",1.3042762345911707,0.5617211994906508,2.469598025487427,5,0.3673995063718567
+A photo of a house in Turkey,Turkey,What's the affluence score?,"{1: 0.156, 2: 0.336, 3: 0.196, 4: 0.256, 5: 0.056}",2.1437478793841063,0.9232619580702823,4.419085606925026,5,0.8547714017312564
+A photo of a house in United Arab Emirates,UAE,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.0, 4: 0.004, 5: 0.996}",0.037622360322278434,0.016203068650195867,1.0264208347602988,5,0.006605208690074693
+A photo of a house in United Kingdom,United Kingdom,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.232, 4: 0.744, 5: 0.024}",0.9355594383108072,0.4029235187647754,1.9126321586848267,5,0.22815803967120668
+A photo of a house in United States of America,United States,What's the affluence score?,"{1: 0.0, 2: 0.028, 3: 0.264, 4: 0.7, 5: 0.008}",1.0676105210512121,0.4597948245692778,2.0959590364780887,5,0.27398975911952217

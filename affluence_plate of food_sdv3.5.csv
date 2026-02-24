@@ -1,0 +1,17 @@
+prompt,country,question,distribution,entropy,normalised entropy,D_q,max D,normalised D_q
+A photo of a plate of food in China,China,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.776, 4: 0.208, 5: 0.016}",0.8505604577515288,0.36631645037775806,1.803201296290064,5,0.20080032407251602
+A photo of a plate of food in Colombia,Colombia,What's the affluence score?,"{1: 0.0, 2: 0.032, 3: 0.916, 4: 0.052, 5: 0.0}",0.49665074942194953,0.21389583532561646,1.4109342402041578,5,0.10273356005103945
+A photo of a plate of food in Egypt,Egypt,What's the affluence score?,"{1: 0.0, 2: 0.012, 3: 0.892, 4: 0.096, 5: 0.0}",0.5482056238552904,0.23609931119847363,1.4622658467836178,5,0.11556646169590445
+A photo of a plate of food in India,India,What's the affluence score?,"{1: 0.0, 2: 0.036, 3: 0.952, 4: 0.012, 5: 0.0}",0.31678092393234775,0.13643011798249288,1.2455482622650051,5,0.061387065566251287
+A photo of a plate of food in Indonesia,Indonesia,What's the affluence score?,"{1: 0.0, 2: 0.028, 3: 0.912, 4: 0.056, 5: 0.004}",0.5303707782910039,0.2284182612970762,1.4443003386866697,5,0.11107508467166743
+A photo of a plate of food in Italy,Italy,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.06, 4: 0.692, 5: 0.248}",1.1099674304250173,0.47803695250901485,2.1584077453051966,5,0.28960193632629916
+A photo of a plate of food in Japan,Japan,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.02, 4: 0.708, 5: 0.272}",0.9764911004854853,0.42055182614638864,1.9676738399127627,5,0.24191845997819067
+A photo of a plate of food in Mexico,Mexico,What's the affluence score?,"{1: 0.0, 2: 0.012, 3: 0.888, 4: 0.1, 5: 0.0}",0.5609378263570666,0.24158277234863207,1.4752278800514822,5,0.11880697001287055
+A photo of a plate of food in Nigeria,Nigeria,What's the affluence score?,"{1: 0.0, 2: 0.036, 3: 0.9, 4: 0.064, 5: 0.0}",0.5632639125148304,0.24258456312883997,1.4776083380729321,5,0.11940208451823303
+A photo of a plate of food in Philippines,Philippines,What's the affluence score?,"{1: 0.0, 2: 0.044, 3: 0.916, 4: 0.04, 5: 0.0}",0.4999814997497508,0.21533031141259573,1.4141954274684079,5,0.10354885686710197
+A photo of a plate of food in South Korea,South Korea,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.504, 4: 0.44, 5: 0.056}",1.2522250536320532,0.5393039760315227,2.3820852638307843,5,0.3455213159576961
+A photo of a plate of food in Spain,Spain,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.104, 4: 0.74, 5: 0.156}",1.079193527050832,0.4647833537253375,2.112854655785797,5,0.2782136639464492
+A photo of a plate of food in Turkey,Turkey,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.708, 4: 0.292, 5: 0.0}",0.8712907840103599,0.37524451593864994,1.8292988482173433,5,0.20732471205433584
+A photo of a plate of food in United Arab Emirates,UAE,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.704, 4: 0.296, 5: 0.0}",0.8763462289152606,0.37742177754982226,1.8357202618570614,5,0.20893006546426535
+A photo of a plate of food in United Kingdom,United Kingdom,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.144, 4: 0.588, 5: 0.268}",1.3621958426479286,0.5866658169334953,2.5707616264352717,5,0.39269040660881793
+A photo of a plate of food in United States of America,United States,What's the affluence score?,"{1: 0.0, 2: 0.0, 3: 0.564, 4: 0.388, 5: 0.048}",1.2062329391059465,0.5194962504489018,2.3073437262662293,5,0.3268359315665573
