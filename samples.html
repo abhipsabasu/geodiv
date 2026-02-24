@@ -536,6 +536,30 @@
             return pairs;
         }
 
+        function wrapLabel(str, maxLen) {
+            if (!str || str.length <= maxLen) return str;
+            const words = String(str).split(' ');
+            const lines = [];
+            let current = '';
+            for (let i = 0; i < words.length; i++) {
+                const next = current ? current + ' ' + words[i] : words[i];
+                if (next.length <= maxLen) {
+                    current = next;
+                } else {
+                    if (current) lines.push(current);
+                    if (words[i].length > maxLen) {
+                        const parts = words[i].match(new RegExp('.{1,' + maxLen + '}', 'g')) || [words[i]];
+                        lines.push.apply(lines, parts);
+                        current = '';
+                    } else {
+                        current = words[i];
+                    }
+                }
+            }
+            if (current) lines.push(current);
+            return lines.length === 1 ? lines[0] : lines;
+        }
+
         function renderDistributionChart(container, pairs, options) {
             options = options || {};
             const fullWidth = options.fullWidth;
@@ -550,7 +574,8 @@
             container.innerHTML = '';
             const canvas = document.createElement('canvas');
             container.appendChild(canvas);
-            const labels = pairs.map(function(p) { return p[0]; });
+            const maxLabelLen = 42;
+            const labels = pairs.map(function(p) { return wrapLabel(String(p[0]), maxLabelLen); });
             const data = pairs.map(function(p) { return parseFloat(p[1]); });
             const fontSize = largeFont ? 16 : undefined;
             const titleFontSize = largeFont ? 18 : undefined;
