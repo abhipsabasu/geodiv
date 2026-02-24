@@ -263,6 +263,33 @@
             max-height: 280px;
         }
 
+        .distribution-chart-wrap.full-width-chart {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .distribution-chart-wrap.full-width-chart canvas {
+            max-height: 360px;
+        }
+
+        .view-data-link {
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid #eee;
+            font-size: 0.95em;
+            color: #555;
+            text-align: center;
+        }
+
+        .view-data-link a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        .view-data-link a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.8em;
@@ -306,11 +333,11 @@
                     <i class="fas fa-home"></i>
                     Home
                 </a>
-                <a href="https://github.com/abhipsabasu/geodiv" class="button button-arxiv" target="_blank">
+                <a href="index.html" class="button button-arxiv" target="_blank">
                     <i class="fas fa-file-pdf"></i>
                     arXiv
                 </a>
-                <a href="https://github.com/abhipsabasu/geodiv" class="button button-github" target="_blank">
+                <a href="https://github.com/moha23/geodiv/tree/main" class="button button-github" target="_blank">
                     <i class="fab fa-github"></i>
                     GitHub
                 </a>
@@ -385,15 +412,35 @@
                 </div>
                 <div class="view-panel view-placeholder" id="affluencePanel" data-view="affluence-distribution">
                     <div id="affluenceContent"></div>
+                    <p class="view-data-link">Raw distributions and the Diversity Scores for each entity-country-model triplet can be found <a href="https://drive.google.com/drive/folders/1mX31sQXt7P4KDcBDouH5fH7v14YFgmza?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.</p>
                 </div>
                 <div class="view-panel view-placeholder" id="maintenancePanel" data-view="maintenance-distribution">
                     <div id="maintenanceContent"></div>
+                    <p class="view-data-link">Raw distributions and the Diversity Scores for each entity-country-model triplet can be found <a href="https://drive.google.com/drive/folders/1MxRGzbQFsD8iE2ui7QsdinCpEhhLCMCh?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.</p>
                 </div>
                 <div class="view-panel view-placeholder" id="entityAppearancePanel" data-view="entity-appearance">
-                    <p class="view-placeholder-text">Entity-Appearance</p>
+                    <div id="entityAppearanceContent">
+                        <div class="dropdown-group" id="entityQuestionGroup" style="display: none;">
+                            <label for="entityQuestion">Question:</label>
+                            <select id="entityQuestion" name="entityQuestion">
+                                <option value="">Select a question...</option>
+                            </select>
+                        </div>
+                        <div id="entityChartContainer"></div>
+                    </div>
+                    <p class="view-data-link">Raw distributions and the Diversity Scores for each entity-country-model triplet can be found <a href="https://drive.google.com/drive/folders/1fna84lOu7q7fdV2DCHES0xAs1KPajDwd?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.</p>
                 </div>
                 <div class="view-panel view-placeholder" id="backgroundAppearancePanel" data-view="background-appearance">
-                    <p class="view-placeholder-text">Background Appearance</p>
+                    <div id="backgroundAppearanceContent">
+                        <div class="dropdown-group" id="backgroundQuestionGroup" style="display: none;">
+                            <label for="backgroundQuestion">Question:</label>
+                            <select id="backgroundQuestion" name="backgroundQuestion">
+                                <option value="">Select a question...</option>
+                            </select>
+                        </div>
+                        <div id="backgroundChartContainer"></div>
+                    </div>
+                    <p class="view-data-link">Raw distributions and the Diversity Scores for each entity-country-model triplet can be found <a href="https://drive.google.com/drive/folders/1zm-K6ydl2WRAM0TXKt1xdJnjMFVCbBwZ?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.</p>
                 </div>
             </div>
         </div>
@@ -469,17 +516,33 @@
             return pairs;
         }
 
-        function renderDistributionChart(container, pairs) {
+        function parseDistributionStringEntity(str) {
+            // str is like "{'no': 0.97, 'yes': 0.02}" - string keys, return array of [key, value]
+            const pairs = [];
+            const regex = /'([^']*)'\s*:\s*([\d.]+)/g;
+            let match;
+            while ((match = regex.exec(str)) !== null) {
+                pairs.push([match[1], match[2]]);
+            }
+            return pairs;
+        }
+
+        function renderDistributionChart(container, pairs, options) {
+            options = options || {};
+            const fullWidth = options.fullWidth;
+            const largeFont = options.largeFont;
             if (container._chartInstance) {
                 container._chartInstance.destroy();
                 container._chartInstance = null;
             }
-            container.className = 'distribution-chart-wrap';
+            container.className = 'distribution-chart-wrap' + (fullWidth ? ' full-width-chart' : '');
             container.innerHTML = '';
             const canvas = document.createElement('canvas');
             container.appendChild(canvas);
             const labels = pairs.map(function(p) { return p[0]; });
             const data = pairs.map(function(p) { return parseFloat(p[1]); });
+            const fontSize = largeFont ? 16 : undefined;
+            const titleFontSize = largeFont ? 18 : undefined;
             container._chartInstance = new Chart(canvas, {
                 type: 'bar',
                 data: {
@@ -501,12 +564,22 @@
                     },
                     scales: {
                         x: {
-                            title: { display: true, text: 'Frequency' },
+                            title: {
+                                display: true,
+                                text: 'Frequency',
+                                font: titleFontSize ? { size: titleFontSize } : undefined
+                            },
+                            ticks: fontSize ? { font: { size: fontSize } } : undefined,
                             beginAtZero: true,
                             max: 1
                         },
                         y: {
-                            title: { display: true, text: 'Attribute Values' }
+                            title: {
+                                display: true,
+                                text: 'Attribute Values',
+                                font: titleFontSize ? { size: titleFontSize } : undefined
+                            },
+                            ticks: fontSize ? { font: { size: fontSize } } : undefined
                         }
                     }
                 }
@@ -559,7 +632,7 @@
                     }
                     const distStr = row[distIdx];
                     const pairs = parseDistributionString(distStr);
-                    renderDistributionChart(container, pairs);
+                    renderDistributionChart(container, pairs, { fullWidth: true, largeFont: true });
                 })
                 .catch(function(err) {
                     container.innerHTML = '<p class="view-placeholder-text">Could not load distribution. ' + (err.message || '') + '</p>';
@@ -612,7 +685,7 @@
                     }
                     const distStr = row[distIdx];
                     const pairs = parseDistributionString(distStr);
-                    renderDistributionChart(container, pairs);
+                    renderDistributionChart(container, pairs, { fullWidth: true, largeFont: true });
                 })
                 .catch(function(err) {
                     container.innerHTML = '<p class="view-placeholder-text">Could not load distribution. ' + (err.message || '') + '</p>';
@@ -636,6 +709,208 @@
             }
             out.push(cur.trim());
             return out;
+        }
+
+        function loadEntityAppearance(entity, country, model) {
+            const panel = document.getElementById('entityAppearancePanel');
+            const questionGroup = document.getElementById('entityQuestionGroup');
+            const questionSelect = document.getElementById('entityQuestion');
+            const chartContainer = document.getElementById('entityChartContainer');
+            if (chartContainer._chartInstance) {
+                chartContainer._chartInstance.destroy();
+                chartContainer._chartInstance = null;
+            }
+            chartContainer.innerHTML = '';
+            chartContainer.className = '';
+            questionGroup.style.display = 'none';
+            questionSelect.innerHTML = '<option value="">Select a question...</option>';
+            panel._entityCsvRows = null;
+            panel._entityCsvHeaders = null;
+
+            if (!entity || !country || !model) {
+                chartContainer.innerHTML = '<p class="view-placeholder-text">Select entity, country and model to see entity-appearance distribution.</p>';
+                return;
+            }
+
+            const entityCsv = getEntityCsvName(entity);
+            const modelCsv = getModelCsvName(model);
+            const csvPath = `entity_${entityCsv}_${modelCsv}.csv`;
+            chartContainer.innerHTML = '<p class="view-placeholder-text">Loading…</p>';
+
+            fetch(csvPath)
+                .then(function(res) {
+                    if (!res.ok) throw new Error('CSV not found');
+                    return res.text();
+                })
+                .then(function(text) {
+                    const lines = text.trim().split(/\r?\n/);
+                    if (lines.length < 2) throw new Error('Empty or invalid CSV');
+                    const headers = lines[0].split(',').map(function(h) { return h.trim(); });
+                    const countryIdx = headers.indexOf('country');
+                    const questionIdx = headers.indexOf('question');
+                    const distIdx = headers.indexOf('distribution');
+                    if (countryIdx === -1 || questionIdx === -1 || distIdx === -1) throw new Error('Missing country, question or distribution column');
+                    const rows = [];
+                    for (let i = 1; i < lines.length; i++) {
+                        rows.push(parseCsvLine(lines[i]));
+                    }
+                    const questions = [];
+                    const seen = {};
+                    rows.forEach(function(row) {
+                        const q = row[questionIdx];
+                        if (q && !seen[q]) {
+                            seen[q] = true;
+                            questions.push(q);
+                        }
+                    });
+                    panel._entityCsvRows = rows;
+                    panel._entityCsvHeaders = { countryIdx: countryIdx, questionIdx: questionIdx, distIdx: distIdx };
+                    questionSelect.innerHTML = '<option value="">Select a question...</option>';
+                    questions.forEach(function(q) {
+                        const opt = document.createElement('option');
+                        opt.value = q;
+                        opt.textContent = q;
+                        questionSelect.appendChild(opt);
+                    });
+                    questionGroup.style.display = 'flex';
+                    chartContainer.innerHTML = '';
+                    chartContainer.classList.remove('distribution-chart-wrap', 'full-width-chart');
+                    updateEntityAppearanceChart();
+                })
+                .catch(function(err) {
+                    chartContainer.innerHTML = '<p class="view-placeholder-text">Could not load data. ' + (err.message || '') + '</p>';
+                });
+        }
+
+        function updateEntityAppearanceChart() {
+            const panel = document.getElementById('entityAppearancePanel');
+            const chartContainer = document.getElementById('entityChartContainer');
+            const questionSelect = document.getElementById('entityQuestion');
+            const country = document.getElementById('country').value;
+            const question = questionSelect.value;
+            if (!panel._entityCsvRows || !country || !question) {
+                if (chartContainer._chartInstance) {
+                    chartContainer._chartInstance.destroy();
+                    chartContainer._chartInstance = null;
+                }
+                chartContainer.innerHTML = question ? '' : '';
+                return;
+            }
+            const h = panel._entityCsvHeaders;
+            const row = panel._entityCsvRows.find(function(r) {
+                return r[h.countryIdx] === country && r[h.questionIdx] === question;
+            });
+            if (!row) {
+                chartContainer.innerHTML = '<p class="view-placeholder-text">No data for this country and question.</p>';
+                return;
+            }
+            const pairs = parseDistributionStringEntity(row[h.distIdx]);
+            if (!pairs.length) {
+                chartContainer.innerHTML = '<p class="view-placeholder-text">No distribution data.</p>';
+                return;
+            }
+            renderDistributionChart(chartContainer, pairs, { fullWidth: true, largeFont: true });
+        }
+
+        function loadBackgroundAppearance(entity, country, model) {
+            const panel = document.getElementById('backgroundAppearancePanel');
+            const questionGroup = document.getElementById('backgroundQuestionGroup');
+            const questionSelect = document.getElementById('backgroundQuestion');
+            const chartContainer = document.getElementById('backgroundChartContainer');
+            if (chartContainer._chartInstance) {
+                chartContainer._chartInstance.destroy();
+                chartContainer._chartInstance = null;
+            }
+            chartContainer.innerHTML = '';
+            chartContainer.className = '';
+            questionGroup.style.display = 'none';
+            questionSelect.innerHTML = '<option value="">Select a question...</option>';
+            panel._backgroundCsvRows = null;
+            panel._backgroundCsvHeaders = null;
+
+            if (!entity || !country || !model) {
+                chartContainer.innerHTML = '<p class="view-placeholder-text">Select entity, country and model to see background-appearance distribution.</p>';
+                return;
+            }
+
+            const entityCsv = getEntityCsvName(entity);
+            const modelCsv = getModelCsvName(model);
+            const csvPath = `background_${entityCsv}_${modelCsv}.csv`;
+            chartContainer.innerHTML = '<p class="view-placeholder-text">Loading…</p>';
+
+            fetch(csvPath)
+                .then(function(res) {
+                    if (!res.ok) throw new Error('CSV not found');
+                    return res.text();
+                })
+                .then(function(text) {
+                    const lines = text.trim().split(/\r?\n/);
+                    if (lines.length < 2) throw new Error('Empty or invalid CSV');
+                    const headers = lines[0].split(',').map(function(h) { return h.trim(); });
+                    const countryIdx = headers.indexOf('country');
+                    const questionIdx = headers.indexOf('question');
+                    const distIdx = headers.indexOf('distribution');
+                    if (countryIdx === -1 || questionIdx === -1 || distIdx === -1) throw new Error('Missing country, question or distribution column');
+                    const rows = [];
+                    for (let i = 1; i < lines.length; i++) {
+                        rows.push(parseCsvLine(lines[i]));
+                    }
+                    const questions = [];
+                    const seen = {};
+                    rows.forEach(function(row) {
+                        const q = row[questionIdx];
+                        if (q && !seen[q]) {
+                            seen[q] = true;
+                            questions.push(q);
+                        }
+                    });
+                    panel._backgroundCsvRows = rows;
+                    panel._backgroundCsvHeaders = { countryIdx: countryIdx, questionIdx: questionIdx, distIdx: distIdx };
+                    questionSelect.innerHTML = '<option value="">Select a question...</option>';
+                    questions.forEach(function(q) {
+                        const opt = document.createElement('option');
+                        opt.value = q;
+                        opt.textContent = q;
+                        questionSelect.appendChild(opt);
+                    });
+                    questionGroup.style.display = 'flex';
+                    chartContainer.innerHTML = '';
+                    chartContainer.classList.remove('distribution-chart-wrap', 'full-width-chart');
+                    updateBackgroundAppearanceChart();
+                })
+                .catch(function(err) {
+                    chartContainer.innerHTML = '<p class="view-placeholder-text">Could not load data. ' + (err.message || '') + '</p>';
+                });
+        }
+
+        function updateBackgroundAppearanceChart() {
+            const panel = document.getElementById('backgroundAppearancePanel');
+            const chartContainer = document.getElementById('backgroundChartContainer');
+            const questionSelect = document.getElementById('backgroundQuestion');
+            const country = document.getElementById('country').value;
+            const question = questionSelect.value;
+            if (!panel._backgroundCsvRows || !country || !question) {
+                if (chartContainer._chartInstance) {
+                    chartContainer._chartInstance.destroy();
+                    chartContainer._chartInstance = null;
+                }
+                chartContainer.innerHTML = question ? '' : '';
+                return;
+            }
+            const h = panel._backgroundCsvHeaders;
+            const row = panel._backgroundCsvRows.find(function(r) {
+                return r[h.countryIdx] === country && r[h.questionIdx] === question;
+            });
+            if (!row) {
+                chartContainer.innerHTML = '<p class="view-placeholder-text">No data for this country and question.</p>';
+                return;
+            }
+            const pairs = parseDistributionStringEntity(row[h.distIdx]);
+            if (!pairs.length) {
+                chartContainer.innerHTML = '<p class="view-placeholder-text">No distribution data.</p>';
+                return;
+            }
+            renderDistributionChart(chartContainer, pairs, { fullWidth: true, largeFont: true });
         }
 
         function loadGridImage(entity, country, model) {
@@ -692,6 +967,10 @@
                 loadAffluenceDistribution(entity, country, model);
             } else if (viewValue === 'maintenance-distribution') {
                 loadMaintenanceDistribution(entity, country, model);
+            } else if (viewValue === 'entity-appearance') {
+                loadEntityAppearance(entity, country, model);
+            } else if (viewValue === 'background-appearance') {
+                loadBackgroundAppearance(entity, country, model);
             }
         }
 
@@ -719,8 +998,24 @@
                 loadAffluenceDistribution(entity, country, model);
             } else if (viewValue === 'maintenance-distribution') {
                 loadMaintenanceDistribution(entity, country, model);
+            } else if (viewValue === 'entity-appearance') {
+                loadEntityAppearance(entity, country, model);
+            } else if (viewValue === 'background-appearance') {
+                loadBackgroundAppearance(entity, country, model);
             }
         }
+
+        document.getElementById('entityQuestion').addEventListener('change', function() {
+            if (document.getElementById('view').value === 'entity-appearance') {
+                updateEntityAppearanceChart();
+            }
+        });
+
+        document.getElementById('backgroundQuestion').addEventListener('change', function() {
+            if (document.getElementById('view').value === 'background-appearance') {
+                updateBackgroundAppearanceChart();
+            }
+        });
 
         document.getElementById('entity').addEventListener('change', onFilterChange);
         document.getElementById('country').addEventListener('change', onFilterChange);

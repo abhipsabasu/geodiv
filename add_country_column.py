@@ -54,10 +54,10 @@ def process_file(filepath: str) -> None:
 
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    pattern = os.path.join(script_dir, "maintenance_*.csv")
+    pattern = os.path.join(script_dir, "entity_*.csv")
     files = sorted(glob.glob(pattern))
     if not files:
-        print(f"No maintenance_*.csv files found in {script_dir}")
+        print(f"No entity_*.csv files found in {script_dir}")
         return
     print(f"Processing {len(files)} file(s)...")
     for filepath in files:
